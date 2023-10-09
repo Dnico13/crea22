@@ -1,0 +1,138 @@
+#bodys {
+  background-image: url("../asset/escalier.jpeg");
+  background-repeat: no-repeat;
+  width: 99vw;
+  height: 95vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/*width: 700px;
+//height 700px;*/
+.picturechloee {
+  position: relative;
+  width: 18%;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 7%;
+  margin-left: 2%;
+  border: 2px solid #000;
+  margin-bottom: 5%;
+}
+
+.logo {
+  width: 22%;
+  height: auto;
+}
+
+.titrepresentation {
+  color: #000;
+  font-family: Inter;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 10%;
+}
+
+#btnac {
+  width: 10.9375rem;
+  height: 3.375rem;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 2px solid #000;
+  background-color: #969587;
+  color: white;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media screen and (max-width: 768px) {
+  .picturechloee {
+    position: relative;
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 28%;
+    margin-left: 2%;
+    border: 2px solid #000;
+    margin-bottom: 40%;
+  }
+  .titrepresentation {
+    color: #000;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10%;
+  }
+  .logo {
+    width: 35%;
+    height: auto;
+  }
+  #btnac {
+    width: 10.9375rem;
+    height: 3.375rem;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 2px solid #000;
+    background-color: #969587;
+    color: white;
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+.parcours {
+  width: 23.5625rem;
+  height: 19rem;
+  color: #000;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 1.8125rem;
+  border: 2px solid #D9D9D9;
+  background: rgba(255, 255, 255, 0.01);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.projets {
+  width: 23.5625rem;
+  height: 19rem;
+  color: #000;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 1.8125rem;
+  border: 2px solid #D9D9D9;
+  background: rgba(255, 255, 255, 0.01);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.valeurs {
+  width: 23.5625rem;
+  height: 19rem;
+  color: #000;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 1.8125rem;
+  border: 2px solid #D9D9D9;
+  background: rgba(255, 255, 255, 0.01);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}/*# sourceMappingURL=style.css.map */
