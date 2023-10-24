@@ -1,9 +1,31 @@
+.centrale {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navig {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3%;
+}
+
+
+
+
+
+
 .parcours {
-    width: 23.5625rem;
-    height: 19rem;
+    width: 24.625rem;
+    height: 22.1875rem;
+    
     color: #000;
     text-align: justify;
-    font-family: Inter;
+    font-family: $fontfamily;
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
@@ -12,39 +34,63 @@
     border: 2px solid #D9D9D9;
     background: rgba(255, 255, 255, 0.01);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    margin: 3px;
+}
+.esparcours{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.h3{
+    margin-left: 4%;
 }
 
-.projets{
-    
-        width: 23.5625rem;
-        height: 19rem;
-        color: #000;
-        text-align: justify;
-        font-family: Inter;
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        border-radius: 1.8125rem;
-        border: 2px solid #D9D9D9;
-        background: rgba(255, 255, 255, 0.01);
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    
-}
-.valeurs{
-    width: 23.5625rem;
-        height: 19rem;
-        color: #000;
-        text-align: justify;
-        font-family: Inter;
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        border-radius: 1.8125rem;
-        border: 2px solid #D9D9D9;
-        background: rgba(255, 255, 255, 0.01);
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    
+.projets {
 
+    width: 24.625rem;
+    height: 22.1875rem;
+    color: white;
+    text-align: justify;
+    font-family: $fontfamily;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 1.8125rem;
+    border: 2px solid #D9D9D9;
+    background: rgba(255, 255, 255, 0.01);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+
+}
+
+.valeurs {
+    width: 24.625rem;
+    height: 22.1875rem;
+    color: #000;
+    text-align: justify;
+    font-family: $fontfamily;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 1.8125rem;
+    border: 2px solid #D9D9D9;
+    background: rgba(255, 255, 255, 0.01);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+
+
+}
+
+.decobtn {
+    border-radius: 2.8125rem;
+    border: 2px solid #000;
+    background-color: $colorbutton;
+    width: 16.75rem;
+    height: 4.375rem;
+    color: #000;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+   
 }

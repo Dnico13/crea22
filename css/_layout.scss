@@ -1,0 +1,25 @@
+html {
+    width: 99%;
+    height: 100%;
+
+}
+
+
+
+
+
+body {
+    background-image: url('../asset/escalier.jpeg');
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    font-size: x-large;
+    box-sizing: border-box;
+    min-height: 100%;    
+    
+}
