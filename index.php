@@ -4,7 +4,7 @@
     require_once './header.php';
 ?>
 
-<body id="bodys">
+<body>
     
     <main class="container d-flex flex-column justify-content-center align-items-center text-center">
         <div class="row">

@@ -26,10 +26,10 @@ require_once './header.php';
 
 
     <div class="navig">
-        <button class="decobtn"><a class="btn " href="./index.php">Perimetre d'intervention</a></button>
-        <button class="decobtn"><a class="btn " href="">Deroulement d'une intervention</a></button>
-        <button class="decobtn"><a class="btn " href="">Charte de confiance</a></button>
-        <button class="decobtn"><a class="btn " href="">Mes Realisations</a></button>
+        <button class="decobtn"><a class="btn " href="./intervention.php">Perimetre d'intervention</a></button>
+        <button class="decobtn"><a class="btn " href="./deroulement.php">Deroulement d'une intervention</a></button>
+        <button class="decobtn"><a class="btn " href="./Charte.php">Charte de confiance</a></button>
+        <button class="decobtn"><a class="btn " href="./realisation.php">Mes Realisations</a></button>
     </div>
 
 

@@ -9,11 +9,11 @@ html {
 
 
 body {
-    background-image: url('../asset/escalier.jpeg');
+    //background-image: url('../asset/escalier.jpeg');
     background-repeat: no-repeat;
-    
+    background: center  url('../asset/escalier.jpeg');
     background-size: cover;
-    background-position: center;
+    //background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
