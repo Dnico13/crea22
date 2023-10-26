@@ -1,9 +1,9 @@
 <header>
   <nav>
     <div class="header">
-      <a href="./accueil.php" class="logo"><img src="./asset/crea22_logo-white.webp" alt="logo du cabinet Crea22" ></a>
+      <a href="./accueil.php" ><img src="./asset/crea22_logo-white.webp" class="logo1" alt="logo du cabinet Crea22"></a>
 
-      <ul class="nav justify-content-end navbar navbar-dark navmobile">
+      <ul class="nav justify-content-end navbar navbar-dark navmobile ">
         <li class="nav-item">
           <a class="nav-link disabled" href="./intervention.php">Périmetre d'intervention</a>
         </li>
