@@ -211,7 +211,7 @@ html {
 
 body {
   background-repeat: no-repeat;
-  background: center url("../asset/escalier.jpeg");
+  background: center url("../asset/escalier3.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -289,4 +289,87 @@ body {
 
 .colorIntervention span, .colorblack span {
   text-decoration: underline;
+}
+
+form {
+  border: 2px solid black;
+  padding: 20px;
+  width: 50%;
+  margin: auto;
+}
+
+label {
+  display: block;
+}
+
+input[type=text], input[type=email], input[type=tel] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.containerDeroulement {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.container2whitImage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bulleP {
+  height: 11.25rem;
+  flex-shrink: 0;
+  width: 20.3125rem;
+  border: 1px solid #D9D9D9;
+  background: rgba(207, 199, 188, 0.33);
+  border-radius: 1.875rem;
+}
+
+.bullePic {
+  width: 12rem;
+  height: auto;
+  flex-shrink: 0;
+  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
+  border-radius: 1.875rem;
+}
+
+.container2whitImage2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.containerSansImage {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 25%;
+}
+
+.order2 {
+  align-self: start;
+}
+
+.order3 {
+  align-self: end;
 }/*# sourceMappingURL=style.css.map */
