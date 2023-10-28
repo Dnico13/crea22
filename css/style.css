@@ -372,4 +372,54 @@ input[type=submit]:hover {
 
 .order3 {
   align-self: end;
+}
+
+.containerCharte {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  text-align: justify;
+}
+
+.pCharte {
+  width: 49.125rem;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #FFF;
+}
+
+.pCharte span {
+  text-decoration: underline;
+}
+
+.Bullep {
+  height: 16rem;
+  flex-shrink: 0;
+  width: 50.875rem;
+  border: 1px solid #D9D9D9;
+  background: rgba(217, 217, 217, 0.33);
+  border-radius: 1.875rem;
+  align-self: center;
+  padding: 1rem;
+}
+
+.SizePicCharte1 {
+  width: 15.6875rem;
+  height: 14.3125rem;
+  flex-shrink: 0;
+  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
+  border-radius: 1.875rem;
+  align-self: start;
+}
+
+.SizePicCharte2 {
+  width: 15.6875rem;
+  height: 14.3125rem;
+  flex-shrink: 0;
+  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
+  border-radius: 1.875rem;
+  align-self: end;
 }/*# sourceMappingURL=style.css.map */
