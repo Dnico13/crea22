@@ -222,7 +222,7 @@ body {
 }
 
 .btnf {
-  background-color: #969587;
+  background-color: #F5F4F9;
   border-radius: 20px;
   width: 7rem;
 }
@@ -230,7 +230,7 @@ body {
 .footer {
   width: 100%;
   height: 10%;
-  background-color: #e4eff7;
+  background-color: RGBA 84, 82, 83, 70;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -280,11 +280,11 @@ body {
 }
 
 .colorIntervention {
-  color: white;
+  color: #E0CDA9;
 }
 
 .colorblack {
-  color: black;
+  color: #E0CDA9;
 }
 
 .colorIntervention span, .colorblack span {
@@ -340,8 +340,9 @@ input[type=submit]:hover {
   flex-shrink: 0;
   width: 20.3125rem;
   border: 1px solid #D9D9D9;
-  background: rgba(207, 199, 188, 0.33);
+  background: rgba(207, 199, 188, 0.2);
   border-radius: 1.875rem;
+  color: #E0CDA9;
 }
 
 .bullePic {
@@ -422,4 +423,22 @@ input[type=submit]:hover {
   background: url(<path-to-image>), lightgray 50%/cover no-repeat;
   border-radius: 1.875rem;
   align-self: end;
+}
+
+.ContainerRealisation {
+  display: flex;
+  flex: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cssBullePicRealisation {
+  height: 16.0625rem;
+  width: 18.625rem;
+  border: 5px solid #C4C4C4;
+  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 1.875rem;
+  flex-basis: calc(33.33% - 20px);
+  margin: 30px;
 }/*# sourceMappingURL=style.css.map */
