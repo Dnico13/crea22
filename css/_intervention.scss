@@ -19,6 +19,7 @@
     border-radius: 1.875rem;
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     flex-shrink: 0;
+    border: 5px solid $colorborder;
 } 
 .containerinter {
     width: 17.4375rem;
@@ -44,9 +45,11 @@
     padding: 0.5rem;
     
     border: 2px solid #D9D9D9;
-    background: rgba(217, 217, 217, 0.01);
+    background:$colorfondBulle;
     border-radius: 1.875rem;
+    border: 5px solid $colorborder;
 }
+
 
 .colorIntervention {
     color: $colorfontF2;
@@ -59,3 +62,4 @@
 .colorIntervention span, .colorblack span{
     text-decoration: underline;
 }
+

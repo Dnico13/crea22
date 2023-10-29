@@ -12,10 +12,10 @@
                 <p> Chloee Piasechi</p>
                 <p>Architecte d'interieur</p>
             </div>
-            <div class="col-12 order-lg-1">
+           <!-- <div class="col-12 order-lg-1">
                 <img src="./asset/chloee-piasechi4.png" alt="photo de portrait de Chloee Piasechi" class="picturechloee">
             </div>
-            
+-->
             <div class="col-12 order-lg-3">
                 <a href="./accueil.php" class="btn" id="btnac">Bienvenue</a>
             </div>

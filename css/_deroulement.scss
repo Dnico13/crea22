@@ -17,9 +17,10 @@
     flex-shrink: 0;
     width: 20.3125rem;
     border: 1px solid #D9D9D9;
-    background: rgba(207, 199, 188, 0.2);
+    background: $colorfondBulle;
     border-radius: 1.875rem;
     color: $colorfontf1;
+    border: 5px solid $colorborder;
 
 }
 .bullePic{
@@ -28,6 +29,7 @@
     flex-shrink: 0;
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     border-radius: 1.875rem;
+    border: 5px solid $colorborder;
 }
 
 .container2whitImage2{

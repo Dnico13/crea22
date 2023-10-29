@@ -24,7 +24,7 @@
 }
 
 .titrepresentation {
-  color: #000;
+  color: grey;
   font-family: Inter;
   font-size: 2.5rem;
   font-style: normal;
@@ -34,18 +34,19 @@
 }
 
 #btnac {
-  width: 10.9375rem;
-  height: 3.375rem;
   flex-shrink: 0;
   border-radius: 20px;
   border: 2px solid #000;
-  background-color: #969587;
+  background-color: #E0CDA9;
   color: white;
   font-family: Inter;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  width: 10.5rem;
+  height: 3rem;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -118,9 +119,10 @@
   line-height: normal;
   border-radius: 1.8125rem;
   border: 2px solid #D9D9D9;
-  background: rgba(255, 255, 255, 0.01);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
   margin: 3px;
+  background-color: #E0CDA9;
+  border: 5px solid #C4C4C4;
 }
 
 .esparcours {
@@ -136,7 +138,7 @@
 .projets {
   width: 24.625rem;
   height: 20rem;
-  color: white;
+  color: black;
   text-align: justify;
   font-family: inter;
   font-size: 15.5px;
@@ -145,8 +147,9 @@
   line-height: normal;
   border-radius: 1.8125rem;
   border: 2px solid #D9D9D9;
-  background: rgba(255, 255, 255, 0.01);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  background-color: #E0CDA9;
+  border: 5px solid #C4C4C4;
 }
 
 .valeurs {
@@ -161,22 +164,24 @@
   line-height: normal;
   border-radius: 1.8125rem;
   border: 2px solid #D9D9D9;
-  background: rgba(255, 255, 255, 0.01);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  background-color: #E0CDA9;
+  border: 5px solid #C4C4C4;
 }
 
 .decobtn {
   border-radius: 2.8125rem;
   border: 2px solid #000;
-  background-color: #C8E2ED;
-  width: 16.75rem;
+  background-color: #FDF1B8;
   height: 4.375rem;
-  color: #000;
+  color: black;
   font-family: Inter;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  border: 5px solid #C4C4C4;
+  width: 15rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -222,7 +227,7 @@ body {
 }
 
 .btnf {
-  background-color: #F5F4F9;
+  background-color: #E0CDA9;
   border-radius: 20px;
   width: 7rem;
 }
@@ -230,7 +235,7 @@ body {
 .footer {
   width: 100%;
   height: 10%;
-  background-color: RGBA 84, 82, 83, 70;
+  background-color: #F5F5F5;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -255,6 +260,7 @@ body {
   border-radius: 1.875rem;
   background: url(<path-to-image>), lightgray 50%/cover no-repeat;
   flex-shrink: 0;
+  border: 5px solid #C4C4C4;
 }
 
 .containerinter {
@@ -275,16 +281,17 @@ body {
   margin-top: 1rem;
   padding: 0.5rem;
   border: 2px solid #D9D9D9;
-  background: rgba(217, 217, 217, 0.01);
+  background: #E0CDA9;
   border-radius: 1.875rem;
+  border: 5px solid #C4C4C4;
 }
 
 .colorIntervention {
-  color: #E0CDA9;
+  color: black;
 }
 
 .colorblack {
-  color: #E0CDA9;
+  color: black;
 }
 
 .colorIntervention span, .colorblack span {
@@ -296,6 +303,9 @@ form {
   padding: 20px;
   width: 50%;
   margin: auto;
+  background-color: #E0CDA9;
+  border-radius: 2rem;
+  border: 5px solid #C4C4C4;
 }
 
 label {
@@ -311,7 +321,7 @@ input[type=text], input[type=email], input[type=tel] {
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: black;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -320,7 +330,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: grey;
 }
 
 .containerDeroulement {
@@ -340,9 +350,10 @@ input[type=submit]:hover {
   flex-shrink: 0;
   width: 20.3125rem;
   border: 1px solid #D9D9D9;
-  background: rgba(207, 199, 188, 0.2);
+  background: #E0CDA9;
   border-radius: 1.875rem;
-  color: #E0CDA9;
+  color: black;
+  border: 5px solid #C4C4C4;
 }
 
 .bullePic {
@@ -351,6 +362,7 @@ input[type=submit]:hover {
   flex-shrink: 0;
   background: url(<path-to-image>), lightgray 50%/cover no-repeat;
   border-radius: 1.875rem;
+  border: 5px solid #C4C4C4;
 }
 
 .container2whitImage2 {
@@ -389,7 +401,7 @@ input[type=submit]:hover {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  color: #FFF;
+  color: black;
 }
 
 .pCharte span {
@@ -401,10 +413,11 @@ input[type=submit]:hover {
   flex-shrink: 0;
   width: 50.875rem;
   border: 1px solid #D9D9D9;
-  background: rgba(217, 217, 217, 0.33);
+  background: #E0CDA9;
   border-radius: 1.875rem;
   align-self: center;
   padding: 1rem;
+  border: 5px solid #C4C4C4;
 }
 
 .SizePicCharte1 {
@@ -413,6 +426,7 @@ input[type=submit]:hover {
   flex-shrink: 0;
   background: url(<path-to-image>), lightgray 50%/cover no-repeat;
   border-radius: 1.875rem;
+  border: 5px solid #C4C4C4;
   align-self: start;
 }
 
@@ -422,6 +436,7 @@ input[type=submit]:hover {
   flex-shrink: 0;
   background: url(<path-to-image>), lightgray 50%/cover no-repeat;
   border-radius: 1.875rem;
+  border: 5px solid #C4C4C4;
   align-self: end;
 }
 
