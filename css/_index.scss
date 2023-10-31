@@ -24,13 +24,23 @@
 }
 
 .titrepresentation {
-    color: $colorfontf3;
+    //color: $colorfontf3;
     font-family: Inter;
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin-top: 10%;
+    
+}
+.degrade {
+    
+    
+    background-image: $colordegrade;
+    background-clip: text;
+    color: transparent;
+    
+    
 }
 
 #btnac {

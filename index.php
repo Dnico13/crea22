@@ -1,22 +1,25 @@
-
 <?php
-    require_once './top.php';
-    require_once './header.php';
+require_once './top.php';
+
 ?>
 
 <body>
-    
+    <?php
+
+    require_once './header.php';
+    ?>
+
     <main class="container d-flex flex-column justify-content-center align-items-end text-center">
         <div class="row">
-        <div class="col-12 titrepresentation order-lg-2">
-                <p> Chloee Piasechi</p>
-                <p>Architecte d'interieur</p>
+            <div class="col-12 titrepresentation order-lg-2 ">
+                <p class="degrade animate__animated animate__backInUp animate__delay-1s"> Chloé Piasechi</p>
+                <p class="degrade animate__animated animate__backInUp animate__delay-3s">Architecte d'interieur</p>
             </div>
-           <!-- <div class="col-12 order-lg-1">
+            <!-- <div class="col-12 order-lg-1">
                 <img src="./asset/chloee-piasechi4.png" alt="photo de portrait de Chloee Piasechi" class="picturechloee">
             </div>
 -->
-            <div class="col-12 order-lg-3">
+            <div class="col-12 order-lg-3 animate__animated animate__backInUp  animate__delay-4s">
                 <a href="./accueil.php" class="btn" id="btnac">Bienvenue</a>
             </div>
         </div>

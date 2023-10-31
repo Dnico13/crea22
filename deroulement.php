@@ -1,10 +1,14 @@
 <?php
 require_once './top.php';
-require_once './navbar.php';
+
 ?>
 
 <body>
-    <div class="containerDeroulement">
+    <?php
+
+    require_once './navbar.php';
+    ?>
+    <main class="containerDeroulement">
 
         <div class="container2whitImage">
             <P class="bulleP">PREMIER RENDEZ-VOUS:
@@ -25,12 +29,14 @@ require_once './navbar.php';
             <p class="bulleP">PRÉSENTATION DU PROJET:
                 Nous reprendrons un rendez-vous pour vous présenter votre projet d’aménagement et de décoration complet . Une vision globale de votre futur intérieur qui va vous permettre de valider vos futurs choix ( matériaux, mobiliers…).</p>
         </div>
-    </div>
+    </main>
+    <footer>
+        <?php
+        require_once './footer.php';
+        ?>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
-<footer>
-    <?php
-    require_once './footer.php';
-    ?>
-</footer>
+
 
 </html>

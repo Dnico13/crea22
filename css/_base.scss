@@ -2,8 +2,8 @@
 $fontfamily: inter;
 $fontsize : 15.5px;
 $fontsizereduc: 10.3px;
-$colorbutton : #FDF1B8;
-
+//$colorbutton : #FDF1B8;
+$colorbutton: #D3D3D3;
 
 $colorfontf3 : grey;
 //$colorbuttonfooter: #969587;
@@ -14,3 +14,4 @@ $colorbackgroundfooter : #F5F5F5;
 $colorfontF2: black;
 $colorfondBulle :#E0CDA9;
 $colorborder: #C4C4C4;
+$colordegrade:linear-gradient(270deg, rgba(1,1,13,1) 3%, rgba(245,245,245,1) 14%);

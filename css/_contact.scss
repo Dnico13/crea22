@@ -1,4 +1,25 @@
-form {
+.ContenaireContact{
+    
+
+}
+.coordonees{
+  border: 2px solid black;
+  padding: 20px;
+  width: 50%;
+  margin: auto;
+  background-color: $colorfondBulle;
+  border-radius: 2rem;
+  border: 5px solid $colorborder;
+  text-align: center;
+  
+}
+.coordonees a {
+  color:black;
+}
+
+
+
+.form {
     border: 2px solid black;
     padding: 20px;
     width: 50%;

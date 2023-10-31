@@ -24,13 +24,19 @@
 }
 
 .titrepresentation {
-  color: grey;
   font-family: Inter;
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   margin-top: 10%;
+}
+
+.degrade {
+  background-image: linear-gradient(270deg, rgb(1, 1, 13) 3%, rgb(245, 245, 245) 14%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
 
 #btnac {
@@ -172,7 +178,7 @@
 .decobtn {
   border-radius: 2.8125rem;
   border: 2px solid #000;
-  background-color: #FDF1B8;
+  background-color: #D3D3D3;
   height: 4.375rem;
   color: black;
   font-family: Inter;
@@ -298,7 +304,22 @@ body {
   text-decoration: underline;
 }
 
-form {
+.coordonees {
+  border: 2px solid black;
+  padding: 20px;
+  width: 50%;
+  margin: auto;
+  background-color: #E0CDA9;
+  border-radius: 2rem;
+  border: 5px solid #C4C4C4;
+  text-align: center;
+}
+
+.coordonees a {
+  color: black;
+}
+
+.form {
   border: 2px solid black;
   padding: 20px;
   width: 50%;
@@ -456,4 +477,19 @@ input[type=submit]:hover {
   border-radius: 1.875rem;
   flex-basis: calc(33.33% - 20px);
   margin: 30px;
+}
+
+#imagedetail {
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 2rem;
+}
+
+.descriptif {
+  width: 100%;
+  height: 50%;
+  background-color: #E0CDA9;
+  text-align: justify;
+  border-radius: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
