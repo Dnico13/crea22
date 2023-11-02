@@ -19,7 +19,7 @@ require_once './top.php';
                 De la conception au chantier vous n’avez que deux interlocuteurs l’entreprise de construction et moi pour un projet unique et personnalisé.
             </p>
         </div>
-        <img src="./asset/interieur7.webp" alt="illustration d un interieur d une salle de bain calme et reposante" class="SizePicCharte2">
+        <img src="./asset/interieur7.jpg" alt="illustration d un interieur d une salle de bain calme et reposante" class="SizePicCharte2">
     </main>
     <footer>
         <?php

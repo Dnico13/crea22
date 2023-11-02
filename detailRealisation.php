@@ -21,7 +21,7 @@ require_once './top.php';
                     <div id="carouselExample" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active ">
-                                <img src="./asset/renovation_boutique_Trabaud.webp" class="d-block w-50" id="imagedetail" alt="...">
+                                <img src="./asset/renovation_boutique_Trabaud.jpg" class="d-block w-50" id="imagedetail" alt="...">
                             </div>
                             <div class="carousel-item">
                                 <img src="..." class="d-block w-100" alt="...">

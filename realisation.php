@@ -10,11 +10,11 @@ require_once './top.php';
     ?>
     <main class="ContainerRealisation">
 
-        <a href="#"><img src="./asset/chapelle1.webp" alt="" class="cssBullePicRealisation"></a>
-        <a href="#"><img src="./asset/renovation_boutique_Trabaud.webp" alt="" class="cssBullePicRealisation"></a>
-        <a href="#"><img src="./asset/le602.webp" alt="" class="cssBullePicRealisation"></a>
-        <a href="#"><img src="./asset/le-102-5.webp" alt="" class="cssBullePicRealisation"></a>
-        <a href="#"><img src="./asset/vue-3d.webp" alt="" class="cssBullePicRealisation"></a>
+        <a href="#"><img src="./asset/chapelle1.jpg" alt="" class="cssBullePicRealisation"></a>
+        <a href="#"><img src="./asset/renovation_boutique_Trabaud.jpg" alt="" class="cssBullePicRealisation"></a>
+        <a href="#"><img src="./asset/le602.jpg" alt="" class="cssBullePicRealisation"></a>
+        <a href="#"><img src="./asset/le-102-5.jpg" alt="" class="cssBullePicRealisation"></a>
+        <a href="#"><img src="./asset/vue-3d.jpg" alt="" class="cssBullePicRealisation"></a>
 
     </main>
     <footer>
