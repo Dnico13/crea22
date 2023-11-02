@@ -9,7 +9,7 @@ require_once './top.php';
     require_once './navbar.php';
     ?>
     <main class="containerCharte">
-        <img src="./asset/interieur6.jpg" alt="illustration d un salon d un appartement design et moderne" class="SizePicCharte1">
+        <img src="./asset/interieur6.jpg" alt="Illustration d'un salon d'un appartement design et moderne" class="SizePicCharte1">
         <div class="Bullep">
             <p class="pCharte"><span>Un chantier maîtrisé de A à Z:</span><br><br>
                 Du début à la fin, votre chantier est géré et maîtrisé. Après validation du projet d’aménagement proposé ainsi que du devis. Vous aurez simplement deux interlocuteurs. Je travaille en étroite collaboration avec mon collègue qui a une entreprise générale tout corps d’état. Mon collaborateur met passion et savoir faire dans votre projet
@@ -19,7 +19,7 @@ require_once './top.php';
                 De la conception au chantier vous n’avez que deux interlocuteurs l’entreprise de construction et moi pour un projet unique et personnalisé.
             </p>
         </div>
-        <img src="./asset/interieur7.jpg" alt="illustration d un interieur d une salle de bain calme et reposante" class="SizePicCharte2">
+        <img src="./asset/interieur7.jpg" alt="Illustration d'un interieur d'une salle de bain calme et reposante" class="SizePicCharte2">
     </main>
     <footer>
         <?php
