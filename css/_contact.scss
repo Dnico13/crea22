@@ -1,6 +1,5 @@
 .ContenaireContact{
     
-
 }
 .coordonees{
   border: 2px solid black;
@@ -16,6 +15,11 @@
 .coordonees a {
   color:black;
 }
+@media screen and (max-width: 771px) {
+    .coordonees{
+      width: 80%;
+    }  
+}
 
 
 
@@ -27,6 +31,13 @@
     background-color: $colorfondBulle;
     border-radius: 2rem;
     border: 5px solid $colorborder;
+  }
+  @media screen and (max-width: 771px) {
+    .form{
+      width: 90%;
+      
+    }
+    
   }
   
   label {

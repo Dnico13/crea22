@@ -105,24 +105,30 @@
     border: 5px solid $colorborder;
     width: 15rem;
 }
+@media  screen and (min-width:768px) {
 
+    .nav4{
+        display: none;
+    }
+    
+}
 @media screen and (max-width: 768px) {
     
      .parcours {
         width: 24rem;
-        height: 9rem;
+        height: 18rem;
         font-size: $fontsizereduc;
         margin-bottom: 2rem;
      }
      .valeurs{
         width: 24rem;
-        height: 9rem;
+        height: 15rem;
         font-size: $fontsizereduc;
         margin-top: 2rem;
      }
      .projets{
         width: 24rem;
-        height: 11rem;
+        height: 19rem;
         font-size: $fontsizereduc;
      }
      footer {

@@ -10,7 +10,7 @@ require_once './top.php';
     ?>
     <main class="containerCharte">
         <img src="./asset/interieur6.jpg" alt="Illustration d'un salon d'un appartement design et moderne" class="SizePicCharte1">
-        <div class="Bullep">
+        <div class="Bullep w-75 my-3">
             <p class="pCharte"><span>Un chantier maîtrisé de A à Z:</span><br><br>
                 Du début à la fin, votre chantier est géré et maîtrisé. Après validation du projet d’aménagement proposé ainsi que du devis. Vous aurez simplement deux interlocuteurs. Je travaille en étroite collaboration avec mon collègue qui a une entreprise générale tout corps d’état. Mon collaborateur met passion et savoir faire dans votre projet
                 .<br><br>

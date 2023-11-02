@@ -4,14 +4,9 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 
 }
-
-
-
-
-
-
 
 .illustrationInter{
     width: 17.6875rem;
@@ -23,31 +18,39 @@
 } 
 .containerinter {
     width: 17.4375rem;
-    height: 28.5rem;
+    height: 36rem;
     flex-shrink: 0;
 
     text-align: justify;
     font-family: Inter;
-    font-size: 0.8125rem;
+    font-size: $fontsizereduc;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    
-
-    font-family: Inter;
-    font-size: 0.86rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    
     
     margin-top: 1rem;
     padding: 0.5rem;
     
-    border: 2px solid #D9D9D9;
+    
     background:$colorfondBulle;
     border-radius: 1.875rem;
     border: 5px solid $colorborder;
+}
+@media screen and (max-width: 569px) {
+    
+    .B1{
+        height: 23rem;
+    }
+    .B2{
+        height: 29rem;
+    }
+    .B3{
+        height: 29rem;
+    }
+    .B4{
+        height: 38rem;
+    }
+    
 }
 
 

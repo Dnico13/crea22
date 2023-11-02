@@ -3,11 +3,12 @@
     flex-direction: column;
     margin: 1rem;
     text-align: justify;
+    flex-wrap: wrap;
 
 
 }
 .pCharte{
-    width: 49.125rem;
+    //width: 49.125rem;
     font-family: Inter;
     font-size: 1rem;
     font-style: normal;
@@ -23,9 +24,9 @@
     text-decoration: underline;
 }
 .Bullep{
-    height: 16rem;
-    flex-shrink: 0;
-    width: 50.875rem;
+    //height: 16rem;
+    height: auto;
+    //width: 50.875rem;
     border: 1px solid #D9D9D9;
     background: $colorfondBulle;
     border-radius: 1.875rem;
