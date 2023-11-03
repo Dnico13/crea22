@@ -10,11 +10,26 @@ require_once './top.php';
     ?>
     <main class="ContainerRealisation">
 
-        <a href="#"><img src="./asset/chapelle1.jpg" alt="" class="cssBullePicRealisation"></a>
-        <a href="#"><img src="./asset/renovation_boutique_Trabaud.jpg" alt="" class="cssBullePicRealisation"></a>
-        <a href="#"><img src="./asset/le602.jpg" alt="" class="cssBullePicRealisation"></a>
-        <a href="#"><img src="./asset/le-102-5.jpg" alt="" class="cssBullePicRealisation"></a>
-        <a href="#"><img src="./asset/vue-3d.jpg" alt="" class="cssBullePicRealisation"></a>
+        <figure class="figure">
+            <a href="#"><img src="./asset/chapelle1.jpg" class="figure-img  cssBullePicRealisation" alt="..."></a>
+            <figcaption class="figure-caption ms-5">Projet: La chapelle.</figcaption>
+        </figure>
+        <figure class="figure">
+           <a href="#"> <img src="./asset/renovation_boutique_Trabaud.jpg" class="figure-img  cssBullePicRealisation" alt="..."></a>
+            <figcaption class="figure-caption ms-5">Projet: Boutique Trabaud</figcaption>
+        </figure>
+        <figure class="figure">
+            <a href="#"><img src="./asset/le602.jpg" class="figure-img  cssBullePicRealisation" alt="..."></a>
+            <figcaption class="figure-caption ms-5">Projet: Le 602</figcaption>
+        </figure>
+        <figure class="figure">
+            <a href="#"><img src="./asset/le-102-5.jpg" class="figure-img  cssBullePicRealisation" alt="..."></a>
+            <figcaption class="figure-caption ms-5">Projet: Le 102</figcaption>
+        </figure>
+        <figure class="figure">
+            <a href="#"><img src="./asset/vue-3d.jpg" class="figure-img  cssBullePicRealisation" alt="..."></a>
+            <figcaption class="figure-caption ms-5">Projet: L'appartement</figcaption>
+        </figure>
 
     </main>
     <footer>

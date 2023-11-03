@@ -14,9 +14,9 @@
 }
 
 .bulleP{
-    height: 11.25rem;
+    height: 12rem;
     flex-shrink: 0;
-    width: 20.3125rem;
+    width: 22.3125rem;
     border: 1px solid #D9D9D9;
     background: $colorfondBulle;
     border-radius: 1.875rem;
@@ -26,7 +26,7 @@
 
 }
 .bullePic{
-    width: 12rem;;
+    width: 13rem;;
     height: auto;
     flex-shrink: 0;
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;

@@ -24,6 +24,7 @@
 }
 
 .titrepresentation {
+  color: #E0CDA9;
   font-family: Inter;
   font-size: 2.5rem;
   font-style: normal;
@@ -197,20 +198,20 @@
 }
 @media screen and (max-width: 768px) {
   .parcours {
-    width: 24rem;
-    height: 18rem;
+    width: 26rem;
+    height: 22rem;
     font-size: 1rem;
     margin-bottom: 2rem;
   }
   .valeurs {
-    width: 24rem;
-    height: 15rem;
+    width: 26rem;
+    height: 22rem;
     font-size: 1rem;
     margin-top: 2rem;
   }
   .projets {
-    width: 24rem;
-    height: 19rem;
+    width: 26rem;
+    height: 22rem;
     font-size: 1rem;
   }
   footer {
@@ -227,7 +228,7 @@ html {
 
 body {
   background-repeat: no-repeat;
-  background: center url("../asset/escalier3.jpg");
+  background: center url("../asset/escalier.jpeg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -294,13 +295,13 @@ body {
 
 @media screen and (max-width: 569px) {
   .B1 {
-    height: 23rem;
+    height: 38rem;
   }
   .B2 {
-    height: 29rem;
+    height: 38rem;
   }
   .B3 {
-    height: 29rem;
+    height: 38rem;
   }
   .B4 {
     height: 38rem;
@@ -393,9 +394,9 @@ input[type=submit]:hover {
 }
 
 .bulleP {
-  height: 11.25rem;
+  height: 12rem;
   flex-shrink: 0;
-  width: 20.3125rem;
+  width: 22.3125rem;
   border: 1px solid #D9D9D9;
   background: #E0CDA9;
   border-radius: 1.875rem;
@@ -405,7 +406,7 @@ input[type=submit]:hover {
 }
 
 .bullePic {
-  width: 12rem;
+  width: 13rem;
   height: auto;
   flex-shrink: 0;
   background: url(<path-to-image>), lightgray 50%/cover no-repeat;
@@ -521,6 +522,11 @@ input[type=submit]:hover {
   flex: row;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.ContainerRealisation figcaption {
+  color: black;
+  font-weight: 750;
 }
 
 .cssBullePicRealisation {

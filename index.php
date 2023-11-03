@@ -3,11 +3,11 @@ require_once './top.php';
 
 ?>
 
-<body>
-    <?php
 
-    require_once './header.php';
-    ?>
+<body>
+    <header class="header mb-4">
+        <img src="./asset/crea22_logo-white.webp" alt="Logo du cabinet Crea22" class="logo">
+    </header>
 
     <main class="container d-flex flex-column justify-content-center align-items-end text-center">
         <div class="row">

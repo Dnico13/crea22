@@ -110,25 +110,25 @@
     .nav4{
         display: none;
     }
-    
-}
+} 
+
 @media screen and (max-width: 768px) {
     
      .parcours {
-        width: 24rem;
-        height: 18rem;
+        width: 26rem;
+        height: 22rem;
         font-size: $fontsizereduc;
         margin-bottom: 2rem;
      }
      .valeurs{
-        width: 24rem;
-        height: 15rem;
+        width: 26rem;
+        height: 22rem;
         font-size: $fontsizereduc;
         margin-top: 2rem;
      }
      .projets{
-        width: 24rem;
-        height: 19rem;
+        width: 26rem;
+        height: 22rem;
         font-size: $fontsizereduc;
      }
      footer {
@@ -137,4 +137,4 @@
      .navig {
         display: none;
      }
-}
+    }

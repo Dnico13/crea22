@@ -8,7 +8,7 @@ require_once './top.php';
 
   require_once './navbar.php';
   ?>
-  <main class="ContenaireContact">
+  <main class="ContenaireContact mb-3">
 
     <div class="coordonees">
       <div class="h3 text-center">Formulaire de Contact</div>
@@ -53,7 +53,7 @@ require_once './top.php';
         <input type="tel" id="telephone" name="telephone"><br><br>
         <Label for="message">Message:</Label>
         <textarea class="form-control" name="message" id="message"  rows="5" placeholder="Laissez votre message ici..."></textarea>
-        <input type="submit" value="Envoyer">
+        <input type="submit" value="Envoyer" class="mt-2">
       </form>
     </div>
   </main>
