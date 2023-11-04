@@ -11,7 +11,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 3%;
+    margin-top: auto;
 }
 
 
@@ -20,8 +20,8 @@
 
 
 .parcours {
-    width: 24.625rem;
-    height: 20rem;
+    width: 25.625rem;
+    height: 20.5rem;
     
     color: #000;
     text-align: justify;
@@ -35,7 +35,7 @@
     border: 2px solid #D9D9D9;
     //background: rgba(255, 255, 255, 0.01);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    margin: 3px;
+    //margin: 3px;
     background-color: $colorfondBulle;
     border: 5px solid $colorborder;
 }
@@ -50,8 +50,8 @@
 
 .projets {
 
-    width: 24.625rem;
-    height: 20rem;
+    width: 25.625rem;
+    height: 20.5rem;
     color:$colorfontf1;
     text-align: justify;
     font-family: $fontfamily;
@@ -70,8 +70,8 @@
 
 
 .valeurs {
-    width: 24.625rem;
-    height: 20rem;
+    width: 25.625rem;
+    height: 20.5rem;
     color: #000;
     text-align: justify;
     font-family: $fontfamily;

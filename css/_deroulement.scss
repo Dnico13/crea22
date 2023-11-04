@@ -14,7 +14,7 @@
 }
 
 .bulleP{
-    height: 12rem;
+    height: 14rem;
     flex-shrink: 0;
     width: 22.3125rem;
     border: 1px solid #D9D9D9;
@@ -23,7 +23,8 @@
     color: $colorfontf1;
     border: 5px solid $colorborder;
     font-size: $fontsizereduc;
-
+    text-align: justify;
+    padding: 1rem;
 }
 .bullePic{
     width: 13rem;;

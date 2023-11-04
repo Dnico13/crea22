@@ -10,6 +10,7 @@ require_once './top.php';
     require_once './navbar.php';
     ?>
     <br>
+    <h1 class="h1  text-center text-primary mb-3">- Mes Prestations -</h1>
     <main class="containerGlobalInter">
         <div>
             <img src="./asset/DesignInterieur.jpg" class="illustrationInter" alt="Illustration de l'interieur d'un appartement moderne et spacieux">

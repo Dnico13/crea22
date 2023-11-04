@@ -4,11 +4,12 @@
     </a>
 
     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <li><a class="dropdown-item" href="./intervention.php">Périmetre d'intervention</a></li>
-        <li><a class="dropdown-item" href="./deroulement.php">Déroulement d'une intervention</a></li>
-        <li><a class="dropdown-item" href="./Charte.php">Charte de confiance</a></li>
+        <li><a class="dropdown-item" href="./intervention.php">Mes Prestations</a></li>
+        <li><a class="dropdown-item" href="./deroulement.php">Les Etapes Projet</a></li>
+        <li><a class="dropdown-item" href="./Charte.php">Mes Engagements</a></li>
         <li><a class="dropdown-item" href="./realisation.php">Mes Réalisations</a></li>
         <li><a class="dropdown-item" href="./espaceClient.php">Espace client</a></li>
+        <li><a class="dropdown-item" href="espacePro.php">Espace Pro</a></li>
         <li><a class="dropdown-item" href="contact.php">Contactez-moi</a></li>
     </ul>
 </div>

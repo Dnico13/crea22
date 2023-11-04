@@ -1,4 +1,4 @@
-<header class="header mb-4">
+<header class="header mb-1">
     <img src="./asset/crea22_logo-white.webp" alt="Logo du cabinet Crea22" class="logo">
     
     <div class="dropdown me-5 mt-4 nav4 drop">

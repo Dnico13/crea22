@@ -8,14 +8,14 @@ require_once './top.php';
 
     require_once './navbar.php';
     ?>
+    <h1 class="h1 text-center text-primary mb-3">- Mes Réalisations -</h1>
     <main class="ContainerRealisation">
-
         <figure class="figure">
             <a href="#"><img src="./asset/chapelle1.jpg" class="figure-img  cssBullePicRealisation" alt="..."></a>
             <figcaption class="figure-caption ms-5">Projet: La chapelle.</figcaption>
         </figure>
         <figure class="figure">
-           <a href="#"> <img src="./asset/renovation_boutique_Trabaud.jpg" class="figure-img  cssBullePicRealisation" alt="..."></a>
+            <a href="#"> <img src="./asset/renovation_boutique_Trabaud.jpg" class="figure-img  cssBullePicRealisation" alt="..."></a>
             <figcaption class="figure-caption ms-5">Projet: Boutique Trabaud</figcaption>
         </figure>
         <figure class="figure">

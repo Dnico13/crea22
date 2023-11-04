@@ -8,7 +8,9 @@ require_once './top.php';
 
     require_once './navbar.php';
     ?>
+        <h1 class="h1 text-center text-primary mb-3">- Mes engagements -</h1>
     <main class="containerCharte">
+        
         <img src="./asset/interieur6.jpg" alt="Illustration d'un salon d'un appartement design et moderne" class="SizePicCharte1">
         <div class="Bullep w-75 my-3">
             <p class="pCharte"><span>Un chantier maîtrisé de A à Z:</span><br><br>

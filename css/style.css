@@ -109,12 +109,12 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-top: 3%;
+  margin-top: auto;
 }
 
 .parcours {
-  width: 24.625rem;
-  height: 20rem;
+  width: 25.625rem;
+  height: 20.5rem;
   color: #000;
   text-align: justify;
   font-family: inter;
@@ -125,7 +125,6 @@
   border-radius: 1.8125rem;
   border: 2px solid #D9D9D9;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-  margin: 3px;
   background-color: #E0CDA9;
   border: 5px solid #C4C4C4;
 }
@@ -141,8 +140,8 @@
 }
 
 .projets {
-  width: 24.625rem;
-  height: 20rem;
+  width: 25.625rem;
+  height: 20.5rem;
   color: black;
   text-align: justify;
   font-family: inter;
@@ -158,8 +157,8 @@
 }
 
 .valeurs {
-  width: 24.625rem;
-  height: 20rem;
+  width: 25.625rem;
+  height: 20.5rem;
   color: #000;
   text-align: justify;
   font-family: inter;
@@ -228,6 +227,7 @@ body {
   background-repeat: no-repeat;
   background: center url("../asset/escalier.jpeg");
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -391,7 +391,7 @@ input[type=submit]:hover {
 }
 
 .bulleP {
-  height: 12rem;
+  height: 14rem;
   flex-shrink: 0;
   width: 22.3125rem;
   border: 1px solid #D9D9D9;
@@ -400,6 +400,8 @@ input[type=submit]:hover {
   color: black;
   border: 5px solid #C4C4C4;
   font-size: 1rem;
+  text-align: justify;
+  padding: 1rem;
 }
 
 .bullePic {
