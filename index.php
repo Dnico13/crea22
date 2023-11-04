@@ -9,18 +9,20 @@ require_once './top.php';
         <img src="./asset/crea22_logo-white.webp" alt="Logo du cabinet Crea22" class="logo">
     </header>
 
-    <main class="container d-flex flex-column justify-content-center align-items-end text-center">
-        <div class="row">
-            <div class="col-12 titrepresentation order-lg-2 ">
-                <p class="degrade animate__animated animate__backInUp animate__delay-1s"> Chloé Piasechi</p>
-                <p class="degrade animate__animated animate__backInUp animate__delay-3s">Architecte d'interieur</p>
-            </div>
-            <!-- <div class="col-12 order-lg-1">
-                <img src="./asset/chloee-piasechi4.png" alt="photo de portrait de Chloee Piasechi" class="picturechloee">
-            </div>
--->
-            <div class="col-12 order-lg-3 animate__animated animate__backInUp  animate__delay-4s">
-                <a href="./accueil.php" class="btn" id="btnac">Bienvenue</a>
+    <main>
+        <div>
+            <div class="d-flex flex-column text-center">
+                <div class="col-12 titrepresentation order-lg-2 ">
+                    <p class="degrade animate__animated animate__backInUp animate__delay-1s color1"> Chloé Piasechi</p>
+                    <p class="degrade animate__animated animate__backInUp animate__delay-3s color1">Architecte d'interieur</p>
+                </div>
+                <!--<div class="col-12 order-lg-1">
+                    <img src="./asset/chloee-piasechi.png" alt="photo de portrait de Chloee Piasechi" class="picturechloee">
+                </div>-->
+
+                <div class="col-12 order-lg-3 animate__animated animate__backInUp  animate__delay-4s">
+                    <a href="./accueil.php" class="btn" id="btnac">Bienvenue</a>
+                </div>
             </div>
         </div>
     </main>

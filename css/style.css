@@ -12,8 +12,6 @@
 .picturechloee {
   width: 18%;
   height: auto;
-  border-radius: 50%;
-  border: 2px solid #000;
   margin-bottom: 4rem;
   margin-left: 1rem;
 }
@@ -24,11 +22,11 @@
 }
 
 .titrepresentation {
-  color: #E0CDA9;
+  color: blue;
   font-family: Inter;
   font-size: 2.5rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 800;
   line-height: normal;
   margin-top: 10%;
 }
@@ -51,8 +49,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 10.5rem;
-  height: 3rem;
+  width: 10rem;
+  height: 2.5rem;
   margin-bottom: 2rem;
 }
 
@@ -241,7 +239,6 @@ body {
 .btnf {
   background-color: #E0CDA9;
   border-radius: 20px;
-  width: 7rem;
 }
 
 .footer {

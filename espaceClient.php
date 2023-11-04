@@ -13,7 +13,7 @@ require_once './top.php';
 
   <main class="form-signin mb-3">
     <form class="form">
-      <img class="mb-4 rounded-circle" src="./asset/chloee-piasechinb.png" alt="Photo de portrait de Chloé Piasechi" width="72" height="57">
+      <img class="mb-4 rounded-circle" src="./asset/chloee-piasechi.png" alt="Photo de portrait de Chloé Piasechi" width="72" height="57">
       <h1 class="h3 mb-3 fw-normal">Veuillez rentrer vos identifiants ici.</h1>
 
       <div class="form-floating">
