@@ -11,7 +11,8 @@ require_once './top.php';
     ?>
 
    <h1 class="h1 text-center mb-3 text-primary">- Présentation -</h1>
-    <div class="centrale">
+   <img src="./asset/chloee-piasechi.png" alt="Portrait de Chloé Piasechi, architecte d'interieur" class="align-self-center img-fluid" width="300px">
+    <div class="centrale mt-3 mb-3">
         <div class="parcours">
             <div class="h3">Parcours:</div>
             <p class="esparcours">Depuis toujours, inspirée et créative, je me passionne pour l’architecture d’intérieur et la rénovation. Je me tourne directement avec évidence vers des études d’architecture d’intérieur, une démarche pour moi essentielle. J'intègre l'ITECOM, école d’art et de design, d’enseignement technique supérieur. Riche et précieux en enseignements, il me permet de côtoyer des professionnels et d'obtenir une certification professionnelle reconnu par l’État et enregistrée au RNCP (Répertoire national de la certification professionnel) dans l’architecture d’intérieur et le design d’espace niveau III – niveau 5 européen. Après 4 ans d’études je travaille dans différents cabinets d’architecture et de rénovation.</p>
