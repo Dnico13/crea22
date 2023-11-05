@@ -25,6 +25,8 @@
     font-size: $fontsizereduc;
     text-align: justify;
     padding: 1rem;
+
+    box-shadow: 8px 4px 10px 5px $colorombre;
 }
 .bullePic{
     width: 13rem;;
@@ -33,6 +35,7 @@
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     border-radius: 1.875rem;
     border: 5px solid $colorborder;
+    box-shadow: 8px 4px 10px 5px rgba(23, 0, 0, 0.94);
 }
 
 .container2whitImage2{

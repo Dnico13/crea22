@@ -34,6 +34,7 @@
     align-self: center;
     padding: 1rem;
     border: 5px solid $colorborder;
+    box-shadow: 8px 4px 10px 5px $colorombre;
 }
 .SizePicCharte1{
     width: 15.6875rem;
@@ -43,6 +44,7 @@
     border-radius: 1.875rem;
     border: 5px solid $colorborder;
     align-self: start;
+    box-shadow: 8px 4px 10px 5px $colorombre;
 }
 .SizePicCharte2{
     width: 15.6875rem;
@@ -52,4 +54,5 @@
     border-radius: 1.875rem;
     border: 5px solid $colorborder;
     align-self: end;
+    box-shadow: 8px 4px 10px 5px $colorombre;
 }

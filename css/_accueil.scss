@@ -19,6 +19,7 @@
 
 
 
+
 .parcours {
     width: 25.625rem;
     height: 20.5rem;
@@ -38,6 +39,7 @@
     //margin: 3px;
     background-color: $colorfondBulle;
     border: 5px solid $colorborder;
+    box-shadow: 8px 4px 10px 5px rgba(23, 0, 0, 0.94);
 }
 .esparcours{
     margin-left: 2%;
@@ -66,6 +68,7 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
     background-color:$colorfondBulle;
     border: 5px solid $colorborder;
+    box-shadow: 8px 4px 10px 5px rgba(23, 0, 0, 0.94);
 }
 
 
@@ -86,6 +89,7 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
     background-color:$colorfondBulle;
     border: 5px solid $colorborder;
+    box-shadow: 8px 4px 10px 5px rgba(23, 0, 0, 0.94);
 }
 
 
@@ -94,7 +98,7 @@
     border-radius: 2.8125rem;
     border: 2px solid #000;
     background-color: $colorbutton;
-   // width: 16.75rem;
+    width: 16.75rem;
     height: 4.375rem;
     color: $colorfontf1;
     font-family: Inter;
@@ -104,7 +108,18 @@
     line-height: normal;
     border: 5px solid $colorborder;
     width: 15rem;
+
+    box-shadow: 8px 4px 10px 5px $colorombre;
+    
 }
+.decobtn:hover {
+    background-color: $colorbuttonhover;
+    transform: scale(1.1);
+    border-style: dashed;
+
+}
+
+
 @media  screen and (min-width:768px) {
 
     .nav4{

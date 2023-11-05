@@ -60,6 +60,15 @@
     width: 10rem;
     height: 2.5rem;
     margin-bottom: 2rem;
+
+    box-shadow: 8px 4px 10px 5px $colorombre;
+}
+
+#btnac:hover{
+    background-color: $colorbuttonhover;
+    transform: scale(1.1);
+    color: $colorfontf1;
+    border: $colorfontf1 dashed 2px;
 }
 
 @media screen and (max-width: 768px)

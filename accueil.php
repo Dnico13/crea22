@@ -11,7 +11,7 @@ require_once './top.php';
     ?>
 
    <h1 class="h1 text-center mb-3 text-primary">- Présentation -</h1>
-   <img src="./asset/chloee-piasechi.png" alt="Portrait de Chloé Piasechi, architecte d'interieur" class="align-self-center img-fluid" width="300px">
+   <img src="./asset/chloee-piasechi.png" alt="Portrait de Chloé Piasechi, architecte d'interieur" class="align-self-center img-fluid " width="300px">
     <div class="centrale mt-3 mb-3">
         <div class="parcours">
             <div class="h3">Parcours:</div>
@@ -33,10 +33,10 @@ require_once './top.php';
 
     <div class="navig mb-2">
         <button class="decobtn"><a class="btn " href="./intervention.php">Mes Prestations</a></button>
-        <button class="decobtn"><a class="btn " href="./deroulement.php"> Les étapes projet</a></button>
-        <button class="decobtn"><a class="btn " href="./Charte.php">Mes Engeagements</a></button>
-        <button class="decobtn"><a class="btn " href="./realisation.php">Mes Realisations</a></button>
-        <button class="decobtn"><a class="btn " href="./espacePro.php">Espace Pro</a></button>
+        <button class="decobtn"><a class="btn  " href="./deroulement.php"> Les étapes projet</a></button>
+        <button class="decobtn"><a class="btn  " href="./Charte.php">Mes Engeagements</a></button>
+        <button class="decobtn"><a class="btn  " href="./realisation.php">Mes Realisations</a></button>
+        <button class="decobtn"><a class="btn  " href="./espacePro.php">Espace Pro</a></button>
     </div>
 
 

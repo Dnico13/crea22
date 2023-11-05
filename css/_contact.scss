@@ -10,6 +10,8 @@
   border-radius: 2rem;
   border: 5px solid $colorborder;
   text-align: center;
+
+  box-shadow: 8px 4px 10px 5px $colorombre;
   
 }
 .coordonees a {
@@ -31,6 +33,8 @@
     background-color: $colorfondBulle;
     border-radius: 2rem;
     border: 5px solid $colorborder;
+
+    box-shadow: 8px 4px 10px 5px $colorombre;
   }
   @media screen and (max-width: 771px) {
     .form{
