@@ -66,3 +66,24 @@ Contraintes présence d’énormément de livres et objets à ranger Espace bure
 . Segmenter un espace réduit afin de définir chaque zone ','Carrelage imitation parquet naturel / meuble blanc / rappel en contraste de ligne noir / claustra bois / jeux sur les différente finitions/ suspension sur mesure ');
 
 SELECT * FROM Realisations
+
+create Table Contact_Sender(
+    Id_Sender INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    Name_Sender VARCHAR(65) NOT NULL,
+    Firstname_Sender VARCHAR(65) NOT NULL,
+    Email_Sender VARCHAR(65) NOT NULL,
+    Numberphone INT NOT NULL,
+    Message VARCHAR(65) NOT NULL
+);
+
+CREATE TABLE Message(
+    Id_message INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    message VARCHAR(255) NOT NULL
+);
+CREATE TABLE Admin(
+    Id_admin VARCHAR(65) not NULL,
+    password_admin VARCHAR(65) NOT NULL
+);
+DROP TABLE Roles;
+ALTER TABLE Message ADD Id_Sender INT NOT NULL,
+ ADD  Id_Sender FOREIGN KEY (Id_Sender) REFERENCES Contact_Sender(Id_Sender);

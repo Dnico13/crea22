@@ -20,7 +20,7 @@ require_once './top.php';
                     <img src="./asset/chloee-piasechi.png" alt="photo de portrait de Chloee Piasechi" class="picturechloee">
                 </div>-->
 
-                <div class="col-12 order-lg-3 animate__animated animate__backInUp  animate__delay-4s">
+                <div class="col-12 order-lg-3 animate__animated animate__backInUp  animate__delay-4s" title="Bienvenue sur Mon site ">
                     <a href="./accueil.php" class="btn" id="btnac">Bienvenue</a>
                 </div>
             </div>

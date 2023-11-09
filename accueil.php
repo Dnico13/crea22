@@ -32,11 +32,11 @@ require_once './top.php';
 
 
     <div class="navig mb-2">
-        <button class="decobtn"><a class="btn " href="./intervention.php">Mes Prestations</a></button>
-        <button class="decobtn"><a class="btn  " href="./deroulement.php"> Les étapes projet</a></button>
-        <button class="decobtn"><a class="btn  " href="./Charte.php">Mes Engeagements</a></button>
-        <button class="decobtn"><a class="btn  " href="./realisation.php">Mes Realisations</a></button>
-        <button class="decobtn"><a class="btn  " href="./espacePro.php">Espace Pro</a></button>
+        <button class="decobtn"><a class="btn " href="./intervention.php" title="Mes Prestations en detail">Mes Prestations</a></button>
+        <button class="decobtn"><a class="btn  " href="./deroulement.php" title="Descriptions des étapes d'un projet"> Les étapes projet</a></button>
+        <button class="decobtn"><a class="btn  " href="./Charte.php" title="Mes engagements">Mes Engeagements</a></button>
+        <button class="decobtn"><a class="btn  " href="./realisation.php" title="Mes réalisations">Mes Realisations</a></button>
+        <button class="decobtn"><a class="btn  " href="./espacePro.php" title="L'espace pour les pro">Espace Pro</a></button>
     </div>
 
 
