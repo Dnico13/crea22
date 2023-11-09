@@ -9,6 +9,10 @@
   height: auto;
 }
 
+.logo1:hover {
+  transform: scale(1.1);
+}
+
 .picturechloee {
   width: 18%;
   height: auto;

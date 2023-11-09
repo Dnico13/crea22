@@ -1,4 +1,4 @@
-<div class="dropdown me-5 mt-4 nav3" title="Detail des Rubriques">
+<div class="dropdown me-5 me-s-n1  mt-4 mt-s-n1 " title="Detail des Rubriques">
     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
         Rubriques
     </a>
