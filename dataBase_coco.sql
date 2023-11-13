@@ -173,3 +173,17 @@ Contraintes présence d’énormément de livres et objets à ranger Espace bure
 . Segmenter un espace réduit afin de définir chaque zone ','Carrelage imitation parquet naturel / meuble blanc / rappel en contraste de ligne noir / claustra bois / jeux sur les différente finitions/ suspension sur mesure ');
 
 SELECT * FROM `Realisation`;
+
+SELECT id FROM Realisation;
+select* from Realisation;
+ INSERT into   `Picture`(Image1, Image2, Image3, Image4,Id_Real)
+ VALUES
+ ('./realisations/trabaud1.webp','./realisations/trabaud2.webp','./realisations/trabaud3.webp','./realisations/trabaud2.webp','1'),
+ ('./realisations/appart1.webp','./realisations/appart2.webp','./realisations/appart3.webp','./realisations/appart4.webp','2'),
+ ('./realisations/chapelle1.webp','./realisations/chapelle2.webp','./realisations/chapelle3.webp','./realisations/chapelle4.webp','3'),
+ ('./realisations/le-102-1.webp','./realisations/le-102-2.webp','./realisations/le-102-3.webp','./realisations/le-102-6.webp','4'),
+ ('./realisations/barriere-1.webp','./realisations/barriere-2.webp','./realisations/barriere-4.webp','./realisations/barriere-5.webp','5');
+
+ select* from `Picture`;
+ select* from `User`;
+ select* from `Admin`;

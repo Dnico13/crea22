@@ -4,7 +4,6 @@ require_once './pdo.php';
 
 $DetailetImages = getDetailetImage($pdo);
 
-
 ?>
 
 <body>
@@ -18,7 +17,7 @@ $DetailetImages = getDetailetImage($pdo);
     foreach ($DetailetImages as $key => $DetailetImage) {?>
 
         <figure class="figure">
-            <a href="./detailRealisation.php?Id=<?= $key ?>"><img src="<?= $DetailetImage['Image1']?>" class="figure-img  cssBullePicRealisation" alt="Illustration de Projet: <?= $DetailetImage['Titre']?>"></a>
+            <a href="#"><img src="<?= $DetailetImage['Image1']?>" class="figure-img  cssBullePicRealisation" alt="Illustration de Projet: <?= $DetailetImage['Titre']?>"></a>
             <figcaption class="figure-caption ms-5">Projet: <?= $DetailetImage['Titre']?></figcaption>
         </figure>
     <?php } ?>      
@@ -33,4 +32,4 @@ $DetailetImages = getDetailetImage($pdo);
 </body>
 
 
-</html>
+</html><a>
