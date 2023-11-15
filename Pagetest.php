@@ -17,7 +17,7 @@ $DetailetImages = getDetailetImage($pdo);
     foreach ($DetailetImages as $key => $DetailetImage) {?>
 
         <figure class="figure">
-            <a href="#"><img src="<?= $DetailetImage['Image1']?>" class="figure-img  cssBullePicRealisation" alt="Illustration de Projet: <?= $DetailetImage['Titre']?>"></a>
+            <a href="./detailRealisation.php?="><img src="<?= $DetailetImage['Image1']?>" class="figure-img  cssBullePicRealisation" alt="Illustration de Projet: <?= $DetailetImage['Titre']?>"></a>
             <figcaption class="figure-caption ms-5">Projet: <?= $DetailetImage['Titre']?></figcaption>
         </figure>
     <?php } ?>      
