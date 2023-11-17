@@ -218,3 +218,4 @@ SELECT* FROM `Realisation`;
 ALTER TABLE `Realisation` DROP Detail4;
 alter table `Realisation`ADD detail4 VARCHAR(500);
 SELECT* FROM `Realisation`;
+select*FROM Picture;
