@@ -46,8 +46,22 @@ function getDetailetImage($pdo)
     return $DetailetImage;
 }
 catch (Exception $e){
- echo 'Cela ne fonctionne tjs pas correctement';
+ echo 'erreur sur les demande de detail des realisations';
 }
+}
+
+function getUtilisateur($pdo)
+{
+    try {
+        $query  = $pdo->prepare("SELECT * FROM User");
+    
+        $query->execute();
+        $Utilisateur = $query->fetchAll(PDO::FETCH_ASSOC);
+        return $Utilisateur;
+    }
+    catch (Exception $e){
+     echo 'Erreur sur les demandes user';
+    }
 }
 
 

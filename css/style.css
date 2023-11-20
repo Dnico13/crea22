@@ -577,6 +577,8 @@ input[type=submit]:hover {
   max-width: 100%;
   height: auto;
   border-radius: 2rem;
+  border: 5px solid #C4C4C4;
+  box-shadow: 8px 4px 10px 5px rgba(23, 0, 0, 0.94);
 }
 
 .descriptif {
@@ -585,4 +587,6 @@ input[type=submit]:hover {
   background-color: #CCE5F0;
   text-align: justify;
   border-radius: 1.5rem;
+  border: 5px solid #C4C4C4;
+  box-shadow: 8px 4px 10px 5px rgba(23, 0, 0, 0.94);
 }/*# sourceMappingURL=style.css.map */

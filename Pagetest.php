@@ -12,15 +12,39 @@ $DetailetImages = getDetailetImage($pdo);
     require_once './navbar.php';
     ?>
     <h1 class="h1 text-center text-primary mb-3">- Mes Réalisations -</h1>
-    <main class="ContainerRealisation">
-<?php
-    foreach ($DetailetImages as $key => $DetailetImage) {?>
-
-        <figure class="figure">
-            <a href="./detailRealisation.php?="><img src="<?= $DetailetImage['Image1']?>" class="figure-img  cssBullePicRealisation" alt="Illustration de Projet: <?= $DetailetImage['Titre']?>"></a>
-            <figcaption class="figure-caption ms-5">Projet: <?= $DetailetImage['Titre']?></figcaption>
-        </figure>
-    <?php } ?>      
+    <main class="">
+      <!-- debut du test -->
+    <div class="container">
+<div class="row">
+<h3>Ma grille CRUD-PHP </h3>
+</div>
+<div class="row">
+<table class="table table-striped table-bordered">
+<thead>
+  <tr>
+    <th>Nom</th>
+    <th>Email-Adresse</th>
+    <th>mobile</th>
+  </tr>
+</thead>
+<tbody>
+<?php 
+include 'database.php';
+$pdo = Database::connect();
+$sql = 'SELECT * FROM customers ORDER BY id DESC';
+foreach ($pdo->query($sql) as $row) {
+echo '<tr>';
+echo '<td>' . $row['name'] . '</td>';
+echo '<td>' . $row['email'] . '</td>';
+echo '<td>' . $row['mobile'] . '</td>';
+echo '</tr>';
+}
+Database::disconnect();
+?>
+</tbody>
+</table>
+</div>
+</div> <!-- /container -->
 
     </main>
     <footer>

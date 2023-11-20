@@ -10,6 +10,8 @@
     max-width: 100%;
     height: auto; 
     border-radius: 2rem;
+    border: 5px solid $colorborder;
+    box-shadow: 8px 4px 10px 5px rgba(23, 0, 0, 0.94);
     
 }
 .descriptif{
@@ -19,6 +21,8 @@
     
     text-align: justify;
     border-radius: 1.5rem;
+    border: 5px solid $colorborder;
+    box-shadow: 8px 4px 10px 5px rgba(23, 0, 0, 0.94);
 }
 
 .DetailIntervention{

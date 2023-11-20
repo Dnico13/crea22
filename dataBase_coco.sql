@@ -219,3 +219,9 @@ ALTER TABLE `Realisation` DROP Detail4;
 alter table `Realisation`ADD detail4 VARCHAR(500);
 SELECT* FROM `Realisation`;
 select*FROM Picture;
+
+SELECT* from User;
+
+INSERT INTO User (Email, Name, `Firstname`, `Role`) 
+VALUES 
+('contactcrea22@gmail.com','Piasecho','Chloe','Admin');
