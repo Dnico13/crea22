@@ -23,15 +23,15 @@ $idp = $id + 1;
                 </div>-->
                 <div class="col-12 col-sm-8 col-lg-6">
 
-                    <div id="carouselExample" class="carousel slide">
+                    <div id="carouselExample" class="carousel slide carousel-fade">
                         <div class="carousel-inner">
-                            <div class="carousel-item active ">
+                            <div class="carousel-item active" data-bs-interval="2000">
                                 <img src="<?= $DetailetImages[$id]['Image2'] ?>" class="d-block w-sm-50 w-md-75" id="imagedetail" alt="...">
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-bs-interval="2000">
                                 <img src="<?= $DetailetImages[$id]['Image3'] ?>" class="d-block w-sm-50 w-md-75" id="imagedetail" alt="...">
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-bs-interval="2000">
                                 <img src="<?= $DetailetImages[$id]['Image4'] ?>" class="d-block w-sm-50 w-md-75" id="imagedetail" alt="...">
                             </div>
                         </div>

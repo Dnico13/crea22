@@ -110,7 +110,7 @@ $details = getDetailetImage($pdo);
           <a href="createImage.php" class="btn btn-success">Création d'une galerie d'Image.</a>
         </p>
 
-        <table class="table table-striped table-bordered ">
+        <table class="table table-striped table-bordered backgroungarray ">
           <thead class="text-primary">
             <tr>
 

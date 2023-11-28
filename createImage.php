@@ -1,18 +1,21 @@
 <?php
 require_once './top.php';
-
+require_once './pdo.php';
+$utilisateurs = getUtilisateur($pdo);
+$details = getDetailetImage($pdo);
 ?>
 
 <body>
     <header>
 
+        <h1 class="h1 text-center text-primary">
+            Interface d'administration
+        </h1>
+
     </header>
-    <h1 class="h1">
-        Interface d administration
-    </h1>
     <main>
-        
-        
+
+
 
 
     </main>

@@ -589,4 +589,8 @@ input[type=submit]:hover {
   border-radius: 1.5rem;
   border: 5px solid #C4C4C4;
   box-shadow: 8px 4px 10px 5px rgba(23, 0, 0, 0.94);
+}
+
+.backgroungarray {
+  background: #CCE5F0;
 }/*# sourceMappingURL=style.css.map */

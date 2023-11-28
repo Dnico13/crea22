@@ -224,4 +224,20 @@ SELECT* from User;
 
 INSERT INTO User (Email, Name, `Firstname`, `Role`) 
 VALUES 
-('contactcrea22@gmail.com','Piasecho','Chloe','Admin');
+('contactcrea22@gmail.com','Piasechi','Chloe','Admin');
+
+INSERT INTO User (Email, Name, `Firstname`, `Role`) 
+VALUES 
+('ndev2023@gotmail.com','Delannay','Nicolas','Administrateur');
+
+ALTER TABLE `User` ADD Password VARCHAR(66) NOT NULL;
+insert INTO `User` (`Email`, `Name`, `Firstname`,`Role`, `Password` )
+VALUES ('Dnico13@hotmail.com', 'Bouddha', 'Bouddha', 'Employe','Vincenzo');
+
+SELECT * FROM `User`;
+DELETE FROM `User`where id=5;
+DELETE FROM `User` where id BETWEEN 6 AND 14;
+delete FROM `User` where id=2;
+DELETE FROM `User` where id BETWEEN 4 AND 16; 
+UPDATE `User` set `Password`= '556949HHH' where id=1;
+UPDATE `User` set `Email`= 'NDev2023@hotmail.com' where id=3;
