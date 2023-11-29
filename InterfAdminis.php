@@ -26,7 +26,7 @@ $details = getDetailetImage($pdo);
         <p>
           <a href="createUsers.php" class="btn btn-success">Création d'un gestionnaire.</a>
         </p>
-
+        
         <table class="table table-striped table-bordered backgroungarray">
           <thead class="text-primary">
             <tr>
