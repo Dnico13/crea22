@@ -4,10 +4,12 @@
 
 function creatUser($pdo)
 {
-      try {  $motDePasse = $_POST['Password'];
-        $hachage = password_hash($motDePasse, PASSWORD_DEFAULT);
+      try {  
    
         $query  = $pdo->prepare('INSERT INTO User (Email, Name, Firstname, Role, Password) VALUES (:email, :name, :firstname, :role, :password)');
+
+        $motDePasse = $_POST['Password'];
+        $hachage = password_hash($motDePasse, PASSWORD_DEFAULT);
 
         $query->bindParam(':email', $_POST['Email']);
         $query->bindParam(':name', $_POST['Name']);
@@ -18,7 +20,7 @@ function creatUser($pdo)
         $query->execute();
         $creatUser = $query->fetchAll(PDO::FETCH_ASSOC);
         return $creatUser;
-
+        header('location: InterfAdminis.php');
         unset($_POST);
       } catch (PDOException $e){
         echo 'la creation  n\'a pas abouti';

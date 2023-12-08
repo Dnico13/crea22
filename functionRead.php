@@ -1,8 +1,10 @@
 <?php
+
 function readUser($pdo)
 {
        try
-       { $identification = $_GET['id'];
+       { 
+        $identification = $_GET['id'];
          $query  = $pdo->prepare("SELECT * FROM User WHERE Id=($identification)");
 
         

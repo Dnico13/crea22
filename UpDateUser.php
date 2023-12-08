@@ -5,7 +5,7 @@ $identification = $_GET['id'];
 require_once './function.php';
 $readUser = readUser($pdo);
 
-
+//<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
 ?>
 
 <body>

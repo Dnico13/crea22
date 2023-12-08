@@ -50,12 +50,12 @@ $details = getDetailetImage($pdo);
         <!-- Validation d'envoi des donnees en methode $_Post-->
 
         <?php
-            require 'function.php'; 
+            require 'functionCreate.php'; 
 
-            // insert data
+            
                 creatUser($pdo);
-                echo 'Donnees bien enregistrees';
-                header('location: Test2.php');
+                
+                
          ?>       
 
     </main>

@@ -1,7 +1,7 @@
 <?php
 require 'pdo.php';
 $user_id = $_GET['id'];
-var_dump($_GET['id']);
+
 deleteUser($pdo);
 function deleteUser($pdo)
 {

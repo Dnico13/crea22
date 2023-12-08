@@ -111,7 +111,7 @@ $readUser = readUser($pdo);
               <!-- fin de l insertion du code de la modification-->
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-success" data-bs-dismiss="modal">Valider</button>
+              <button type="button" class="btn btn-success" data-bs-dismiss="modal" href="./Test3.php?<?= $Users['Id']; ?>">Valider</button>
               <button type="button" class="btn btn-danger">Retour</button>
             </div>
           </div>
