@@ -26,7 +26,7 @@ require_once './pdo.php';
                     $query2->bindParam(':id_contact', $id_contact);
 
                     $query2->execute();
-                    header('location: acceuil.php'); 
+                    header('location: accueil.php'); 
             }
 
         
