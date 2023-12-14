@@ -241,3 +241,17 @@ delete FROM `User` where id=2;
 DELETE FROM `User` where id BETWEEN 4 AND 16; 
 UPDATE `User` set `Password`= '556949HHH' where id=1;
 UPDATE `User` set `Email`= 'NDev2023@hotmail.com' where id=3;
+
+
+DELETE FROM Contact
+USING Contact
+INNER JOIN Message
+ON Contact.Id = Message.Id_contact
+WHERE Contact.Id=5;
+
+DELETE FROM `Message`
+WHERE Id_contact = 5;
+DELETE FROM `Contact`
+where Id=5;
+Delete from `Contact`
+where Id=1;

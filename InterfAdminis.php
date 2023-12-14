@@ -1,9 +1,16 @@
 <?php
+session_start();
+require_once './pdo.php';
 require_once './login.php';
 require_once './top.php';
-require_once './pdo.php';
+//require_once './deleteMessage.php';
+require_once './functionReadMessage.php';
+
 $utilisateurs = getUtilisateur($pdo);
 $details = getDetailetImage($pdo);
+
+$readMessages = readMessages($pdo);
+
 ?>
 
 <body>
@@ -17,8 +24,60 @@ $details = getDetailetImage($pdo);
 
   <main>
 
-    <!-- Debut de la partie administrateur et utilisateur du site -->
+
     <div class="container">
+      <!--visuel de la liste des messages -->
+      <div class="row">
+        <h3 class="text-center  text-primary  mt-3 mb-4">Reception des messages du formulaire de Contact </h3>
+      </div>
+      <div class="row">
+        <table class="table table-striped table-bordered backgroungarray">
+          <thead class="text-primary">
+            <tr>
+
+              <th>Nom:</th>
+              <th>Prenom:</th>
+              <th>Email:</th>
+              <th>Telephone</th>
+              <th>Message</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <?php
+            foreach ($readMessages as $cle => $readMessage) { ?>
+              <tr>
+
+                <td> <?= $readMessage['Nom']; ?> </td>
+                <td> <?= $readMessage['Firstname']; ?> </td>
+                <td> <?= $readMessage['Email']; ?> </td>
+                <td> <?= $readMessage['NumberPhone']; ?> </td>
+                <td> <?= $readMessage['Message']; ?> </td>
+                <td class="text-center">
+                  <form action="./deleteMessage.php?=<?= $readMessage['Id'];?>" method="get">
+                    <input type="hidden" name="Id" value="<?= $readMessage['Id'];?>">
+                    <button class="btn btn-secondary" type="submit">Supprimer</button>
+                  </form>
+
+                </td>
+              </tr>
+            <?php }?>
+
+            
+
+
+          </tbody>
+        </table>
+      </div>
+
+      <!--Fin de la partie listes des messages -->
+
+
+
+
+
+
+      <!-- Debut de la partie administrateur et utilisateur du site -->
       <div class="row">
         <h3 class="text-center  text-primary mb-3">Grille des Utilisateurs </h3>
       </div>
@@ -27,7 +86,7 @@ $details = getDetailetImage($pdo);
         <p>
           <a href="createUsers.php" class="btn btn-success">Création d'un gestionnaire.</a>
         </p>
-        
+
         <table class="table table-striped table-bordered backgroungarray">
           <thead class="text-primary">
             <tr>

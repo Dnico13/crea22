@@ -1,18 +1,18 @@
 <?php
-session_start();
-require_once 'pdo.php';
+
+
 
 if ($_SERVER['REQUEST_METHOD'] === "POST")
 {
     $Email = $_POST['Email'];
     $Password = $_POST['Password'];
 
-    if ($query = $pdo->prepare("SELECT * FROM User WHERE Email=:Email")) {
+    if ($query = $pdo->prepare("SELECT * FROM User WHERE Email=:Email")) 
+    {
         
         $query->bindParam(":Email", $Email);
-        $query->execute();
-
-        $row = $query->fetch(PDO::FETCH_ASSOC);
+        if ($query->execute()) {
+            $row = $query->fetch(PDO::FETCH_ASSOC);
         
         if (password_verify($Password, $row['Password'])) {
             
@@ -22,7 +22,8 @@ if ($_SERVER['REQUEST_METHOD'] === "POST")
         } else {
             echo("<H3 class='text-center h3 text-danger'> Merci de corriger les erreurs de saisie</H3>");
             
+                }
+        }
     }
-}
 }
 

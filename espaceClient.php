@@ -1,4 +1,5 @@
 <?php
+require_once './pdo.php';
 require_once 'login.php';
 require_once './top.php';
 

@@ -26,7 +26,7 @@ require_once './pdo.php';
                     $query2->bindParam(':id_contact', $id_contact);
 
                     $query2->execute();
-                    header('location: acceuil.php'); 
+                    header('location: ./reponseDemandeContact.php'); 
             }
 
         
@@ -72,15 +72,15 @@ require_once './pdo.php';
             <form action="<?= htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="Post">
 
                 <label for="nom">Nom :</label>
-                <input type="text" id="nom" name="nom"><br><br>
+                <input type="text" id="nom" name="nom" required><br><br>
                 <label for="prenom">Prénom :</label>
-                <input type="text" id="prenom" name="prenom"><br><br>
+                <input type="text" id="prenom" name="prenom" required><br><br>
                 <label for="email">Adresse e-mail :</label>
-                <input type="email" id="email" name="email"><br><br>
+                <input type="email" id="email" name="email" required><br><br>
                 <label for="telephone">Numéro de téléphone :</label>
-                <input type="tel" id="telephone" name="telephone"><br><br>
+                <input type="tel" id="telephone" name="telephone"  pattern="[0-9]{10}" required data-error="Veuillez entrer un numéro de téléphone valide." placeholder="0606060606"><br><br>
                 <Label for="message">Message:</Label>
-                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Laissez votre message ici..."></textarea>
+                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Laissez votre message ici..." required></textarea>
                 <input type="submit" placeholder="Envoyer" class="mt-2" >
 
             </form>
