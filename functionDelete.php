@@ -1,37 +1,27 @@
 <?php
-require 'pdo.php';
-$user_id = $_GET['id'];
+require_once './pdo.php';
 
-deleteUser($pdo);
-function deleteUser($pdo)
-{
-    try 
-    {   
+function deleteUser($pdo){
+    
         $user_id = $_GET['id'];
+        $user_id_int= intval($user_id);
         
-        $query  = $pdo->prepare("DELETE FROM User WHERE Id=(:id)");
-        $query->bindParam(':id', $user_id);
+        $query  = $pdo->prepare("DELETE FROM User WHERE Id= :id");
+        $query->bindParam(':id', $user_id_int);
         
         $query->execute();
-        $deleteUser = $query->fetchAll(PDO::FETCH_ASSOC);
-        return $deleteUser;
-        header ('Location: interfAdminis.php');
         
         
-    }  catch (PDOException $e) {
-            echo 'la suppression ne passe pas';
-    }
+        header('Location: ./interfAdminis.php');
+        
+        
+     
 }
-
+deleteUser($pdo);
 
 // partie a verifier 
 
 //<?php
 //if ($_GET['modifier_annonces']) {
-    // Connexion à la base de données
-    // Suppression de l'entrée avec l'ID spécifié
-  //  $id = $_GET['modifier_annonces'];
-    //$sql = "DELETE FROM annonces_photo WHERE id_annonces = '$id'";
-   // mysql_query($sql);
-//}
+ //$user_id = $_GET['id'];   
 //?>

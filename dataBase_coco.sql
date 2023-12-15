@@ -255,3 +255,5 @@ DELETE FROM `Contact`
 where Id=5;
 Delete from `Contact`
 where Id=1;
+
+UPDATE User SET Email= "Maud@gmail.com", Name= "Piasechi", Firstname= "Maud", Role= "Employe"  WHERE Id=44;

@@ -1,6 +1,6 @@
 <?php
 require_once './pdo.php';
-var_dump($_GET);
+
 function deleteMessage($pdo){
         
         
@@ -18,9 +18,6 @@ function deleteMessage($pdo){
         $query1->execute();
         
         header('location: ./InterfAdminis.php');
-       
-        
-        
 }
 
 deleteMessage($pdo);

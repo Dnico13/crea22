@@ -4,6 +4,7 @@
 
 function creatUser($pdo)
 {
+  if (isset($_POST['Password'])){
       try {  
    
         $query  = $pdo->prepare('INSERT INTO User (Email, Name, Firstname, Role, Password) VALUES (:email, :name, :firstname, :role, :password)');
@@ -19,12 +20,13 @@ function creatUser($pdo)
 
         $query->execute();
         $creatUser = $query->fetchAll(PDO::FETCH_ASSOC);
-        return $creatUser;
-        header('location: InterfAdminis.php');
+        //return $creatUser;
+        header('location: ./InterfAdminis.php');
         unset($_POST);
       } catch (PDOException $e){
         echo 'la creation  n\'a pas abouti';
       }
     } 
+  }
 
 

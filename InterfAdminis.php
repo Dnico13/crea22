@@ -54,16 +54,16 @@ $readMessages = readMessages($pdo);
                 <td> <?= $readMessage['NumberPhone']; ?> </td>
                 <td> <?= $readMessage['Message']; ?> </td>
                 <td class="text-center">
-                  <form action="./deleteMessage.php?=<?= $readMessage['Id'];?>" method="get">
-                    <input type="hidden" name="Id" value="<?= $readMessage['Id'];?>">
+                  <form action="./deleteMessage.php?=<?= $readMessage['Id']; ?>" method="get">
+                    <input type="hidden" name="Id" value="<?= $readMessage['Id']; ?>">
                     <button class="btn btn-secondary" type="submit">Supprimer</button>
                   </form>
 
                 </td>
               </tr>
-            <?php }?>
+            <?php } ?>
 
-            
+
 
 
           </tbody>
@@ -108,9 +108,18 @@ $readMessages = readMessages($pdo);
                 <td> <?= $User['Firstname']; ?> </td>
                 <td> <?= $User['Role']; ?> </td>
                 <td class="text-center">
-                  <a class="btn btn-secondary" href="visu.php?id=<?= $User['Id']; ?>">Details</a>
-
+                  <a class="btn btn-secondary" href="visu.php?id=<?= $User['Id']; ?>">Mettre à Jour</a>
+                </td> 
+                <!-- integration du boutton suppression directement sur la partie admin-->
+                <td class="text-center">
+                  <form action="functionDelete.php?<?= $User['Id']; ?>" method="get">
+                    <button class="btn btn-secondary " type="submit" value="<?= $User['Id']; ?>" name="id">Supprimer</button>
+                  </form>
                 </td>
+
+
+                <!-- fin de l integration du boutton de suppression -->
+
               </tr>
             <?php } ?>
 
