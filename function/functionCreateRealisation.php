@@ -38,7 +38,7 @@ Function creatReal($pdo){
 
 
 
-        if($image_error1 === 0 && $image_error2 === 0 && $image_error3 === 0 && $image_error4 === 0 ) {
+        if ($image_error1 === 0 && $image_error2 === 0 && $image_error3 === 0 && $image_error4 === 0 ) {
 
             
             $destination1 = "realisations/".$image_name1 ;  
@@ -75,9 +75,9 @@ Function creatReal($pdo){
         
         
 
-    } 
     } else {
         echo " Il y a eu une erreur lors du téléchargement des images";
+    } 
 }
 }    
 

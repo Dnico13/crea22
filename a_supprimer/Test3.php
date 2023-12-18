@@ -16,7 +16,7 @@ $readMessages = readMessages($pdo);
 <body>
     <header>
 
-        <h1 class="h1 text-center text-primary text-capitalize fw-bold">
+        <h1 class="h1 text-center text-primary">
             Interface d'administration
         </h1>
 
@@ -48,7 +48,7 @@ $readMessages = readMessages($pdo);
                         foreach ($readMessages as $cle => $readMessage) { ?>
                             <tr>
 
-                                <td class="fw-bold"> <?= $readMessage['Nom']; ?> </td>
+                                <td> <?= $readMessage['Nom']; ?> </td>
                                 <td> <?= $readMessage['Firstname']; ?> </td>
                                 <td> <?= $readMessage['Email']; ?> </td>
                                 <td> <?= $readMessage['NumberPhone']; ?> </td>
@@ -103,7 +103,7 @@ $readMessages = readMessages($pdo);
                         foreach ($utilisateurs as $cle => $User) { ?>
                             <tr>
 
-                                <td class="fw-bold"> <?= $User['Email']; ?> </td>
+                                <td> <?= $User['Email']; ?> </td>
                                 <td> <?= $User['Name']; ?> </td>
                                 <td> <?= $User['Firstname']; ?> </td>
                                 <td> <?= $User['Role']; ?> </td>
@@ -157,17 +157,16 @@ $readMessages = readMessages($pdo);
                         foreach ($details as $cle => $Detail) { ?>
                             <tr>
 
-                                <td class="fw-bold"> <?= $Detail['Titre']; ?>
+                                <td> <?= $Detail['Titre']; ?>
                                     <!-- integration des boutons de gestions de MAJ et de suppression -->
-                                    
-                                    <!--<form action="./UpdateRealisation.php?=<?= $Detail['Id_Real']; ?>" method="get" class="mb-2">
-                                        <input type="hidden" name="Id" value="<?= $Detail['Id_Real']; ?>">
+                                    <form action="./UpdateRealisation.php?=<?= $readMessage['Id_Real']; ?>" method="get" class="mb-2">
+                                        <input type="hidden" name="Id" value="<?= $readMessage['Id_Real']; ?>">
                                         <button class="btn btn-secondary" type="submit">Modifier</button>
-                                    </form> -->
+                                    </form>
 
                                     <form action="./deleteRealisation.php?=<?= $Detail['Id_Real']; ?>" method="get">
                                         <input type="hidden" name="Id" value="<?= $Detail['Id_Real']; ?>">
-                                        <button class="btn btn-secondary mt-3" type="submit">Supprimer</button>
+                                        <button class="btn btn-secondary" type="submit">Supprimer</button>
                                     </form>
 
                                     <!-- fin de la partie integration de Mej et de suppression -->
@@ -195,7 +194,7 @@ $readMessages = readMessages($pdo);
 
                 <table class="table table-striped table-bordered backgroungarray ">
                     <thead class="text-primary">
-                        <tr class="text-center">
+                        <tr>
 
                             <th>Titre:</th>
 
@@ -208,14 +207,14 @@ $readMessages = readMessages($pdo);
                     <tbody>
                         <?php
                         foreach ($details as $cle => $Detail) { ?>
-                            <tr class="text-center">
+                            <tr>
 
-                                <td class="fw-bold"> <?= $Detail['Titre']; ?> </td>
+                                <td> <?= $Detail['Titre']; ?> </td>
 
-                                <td> <img class="image-fluid" width="70px" src="<?= $Detail['Image1']; ?>"></td>
-                                <td> <img class="image-fluid" width="70px" src="<?= $Detail['Image2']; ?>"></td>
-                                <td> <img class="image-fluid" width="70px" src="<?= $Detail['Image3']; ?>"></td>
-                                <td> <img class="image-fluid" width="70px" src="<?= $Detail['Image4']; ?>"></td>
+                                <td> <?= $Detail['Image1']; ?> </td>
+                                <td> <?= $Detail['Image2']; ?> </td>
+                                <td> <?= $Detail['Image3']; ?> </td>
+                                <td> <?= $Detail['Image4']; ?> </td>
                             </tr>
                         <?php } ?>
 
