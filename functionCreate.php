@@ -24,7 +24,8 @@ function creatUser($pdo)
         header('location: ./InterfAdminis.php');
         unset($_POST);
       } catch (PDOException $e){
-        echo 'la creation  n\'a pas abouti';
+        echo ' Veuillez verifier vos information.<br>
+              La creation de votre nouveau gestionnaire n\'a pas abouti';
       }
     } 
   }

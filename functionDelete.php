@@ -13,10 +13,12 @@ function deleteUser($pdo){
         
         
         header('Location: ./interfAdminis.php');
-        
+    
+
+    }
         
      
-}
+
 deleteUser($pdo);
 
 // partie a verifier 

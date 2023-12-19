@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST")
         
         if (password_verify($Password, $row['Password'])) {
             
-            setcookie('role','admin',time() +3600, '/');
+            $_SESSION['role'] = $row['Role'];
             
             header('location: ./InterfAdminis.php');
         } else {

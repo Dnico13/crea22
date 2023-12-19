@@ -10,7 +10,7 @@
         </div>
         <div>
             <button class="btnconnexion btnf">
-                <a href="espaceClient.php" title="Se connecter">Espace Client</a>
+                <a href="espaceClient.php" title="Se connecter">Se Connecter</a>
             </button>
 
 

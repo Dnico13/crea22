@@ -11,14 +11,23 @@ $details = getDetailetImage($pdo);
 
 $readMessages = readMessages($pdo);
 
-?>
+
+if (isset($_SESSION['role']) && $_SESSION['role'] === 'Admin'||'Employe')
+{ ?>
 
 <body>
-    <header>
+    <header class="container-fluid d-flex flex-row">
 
-        <h1 class="h1 text-center text-primary text-capitalize fw-bold">
+        <h1 class="h1 text-center text-primary text-capitalize fw-bold col-11 align-self-center">
             Interface d'administration
+
         </h1>
+        <!--<a class="btn btn-outline-dark align-self-end col-1">Déconnexion</a>-->
+        <form action="./logout.php" method="POST" class="align-self-end col-1">
+            <input type="hidden" name="logout" value="">
+            <button class="btn btn-outline-dark" type="submit">Déconnexion</button>
+        </form>
+
 
     </header>
 
@@ -78,6 +87,10 @@ $readMessages = readMessages($pdo);
 
 
             <!-- Debut de la partie administrateur et utilisateur du site -->
+        <?php
+
+        if ( $_SESSION['role'] === 'Admin') {?>
+
             <div class="row">
                 <h3 class="text-center  text-primary mb-3">Grille des Utilisateurs </h3>
             </div>
@@ -128,6 +141,8 @@ $readMessages = readMessages($pdo);
                 </table>
             </div>
         </div> <!-- /container -->
+
+        <?php } ?>
         <!-- Fin de la partie administrateur et utilisateur -->
 
         <!-- Debut de la partie creation et gestion des Realisations -->
@@ -159,7 +174,7 @@ $readMessages = readMessages($pdo);
 
                                 <td class="fw-bold"> <?= $Detail['Titre']; ?>
                                     <!-- integration des boutons de gestions de MAJ et de suppression -->
-                                    
+
                                     <!--<form action="./UpdateRealisation.php?=<?= $Detail['Id_Real']; ?>" method="get" class="mb-2">
                                         <input type="hidden" name="Id" value="<?= $Detail['Id_Real']; ?>">
                                         <button class="btn btn-secondary" type="submit">Modifier</button>
@@ -212,10 +227,10 @@ $readMessages = readMessages($pdo);
 
                                 <td class="fw-bold"> <?= $Detail['Titre']; ?> </td>
 
-                                <td> <img class="image-fluid" width="70px" src="<?= $Detail['Image1']; ?>"></td>
-                                <td> <img class="image-fluid" width="70px" src="<?= $Detail['Image2']; ?>"></td>
-                                <td> <img class="image-fluid" width="70px" src="<?= $Detail['Image3']; ?>"></td>
-                                <td> <img class="image-fluid" width="70px" src="<?= $Detail['Image4']; ?>"></td>
+                                <td> <img class="image-fluid rounded-circle" width="70px" src="<?= $Detail['Image1']; ?>"></td>
+                                <td> <img class="image-fluid rounded-circle" width="70px" src="<?= $Detail['Image2']; ?>"></td>
+                                <td> <img class="image-fluid rounded-circle" width="70px" src="<?= $Detail['Image3']; ?>"></td>
+                                <td> <img class="image-fluid rounded-circle" width="70px" src="<?= $Detail['Image4']; ?>"></td>
                             </tr>
                         <?php } ?>
 
@@ -240,3 +255,6 @@ $readMessages = readMessages($pdo);
 </body>
 
 </html>
+<?php  } else {
+    header ('location : index.php');
+}

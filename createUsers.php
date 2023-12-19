@@ -31,10 +31,18 @@ $details = getDetailetImage($pdo);
                 <input type="text" name="Firstname" class="form-control" id="Firstname">
 
             </div>
-            <div class="mb-3">
+            <!--<div class="mb-3">
                 <label for="Role" class="form-label">Role:</label>
                 <input type="text" name="Role" class="form-control" id="Role">
 
+            </div>-->
+            <div class="mb-3">
+            <label for="Role" class="form-label">Role:</label>
+                <select class="form-select form-select-sm mb-3" aria-label=".form-select-sm example" name="Role" id="Role">
+                    <option selected class="active">Choisir un Role ci dessous:</option>
+                    <option value="Admin">Administrateur</option>
+                    <option value="Employe">Employé</option>
+                </select>
             </div>
             <div class="mb-3">
                 <label for="Password" class="form-label">Password:</label>
@@ -49,7 +57,7 @@ $details = getDetailetImage($pdo);
         <!-- Validation d'envoi des donnees en methode $_Post-->
 
         <?php
-        
+
 
 
         creatUser($pdo);
