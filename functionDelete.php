@@ -12,8 +12,8 @@ function deleteUser($pdo){
         $query->execute();
         
         
-        header('Location: ./interfAdminis.php');
-    
+        header('Location: ./InterfAdminis.php');
+            
 
     }
         

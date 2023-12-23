@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 require_once './pdo.php';
 require_once './login.php';
 require_once './top.php';
@@ -12,7 +13,7 @@ $details = getDetailetImage($pdo);
 $readMessages = readMessages($pdo);
 
 
-if (isset($_SESSION['role']) && $_SESSION['role'] === 'Admin'||'Employe')
+if (isset($_SESSION['role']) && $_SESSION['role'] === 'Admin'||$_SESSION['role'] === 'Employe')
 { ?>
 
 <body>
@@ -256,5 +257,5 @@ if (isset($_SESSION['role']) && $_SESSION['role'] === 'Admin'||'Employe')
 
 </html>
 <?php  } else {
-    header ('location : index.php');
+    header ('location : ./index.php');
 }

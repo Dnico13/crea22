@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST")
 
     if ($query = $pdo->prepare("SELECT * FROM User WHERE Email=:Email")) 
     {
-        
+     
         $query->bindParam(":Email", $Email);
         if ($query->execute()) {
             $row = $query->fetch(PDO::FETCH_ASSOC);
@@ -24,6 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST")
             
                 }
         }
+        
     }
 }
 

@@ -45,16 +45,20 @@ $readUser = readUser($pdo);
                   </td>
 
                   <td>
-                    <input placeholder="<?= $Users['Email']; ?>" name="Email" required>
+                    <input placeholder="<?= $Users['Email']; ?>" name="Email" type="email"  required>
                   </td>
                   <td>
-                    <input placeholder="<?= $Users['Name']; ?>" name="Name" required>
+                    <input placeholder="<?= $Users['Name']; ?>" name="Name" type="text" required>
                   </td>
                   <td>
-                    <input placeholder="<?= $Users['Firstname']; ?>" name="Firstname" required>
+                    <input placeholder="<?= $Users['Firstname']; ?>" name="Firstname"  type="text" required>
                   </td>
                   <td>
-                    <input placeholder="<?= $Users['Role']; ?>" name="Role" required>
+                    <select class="form-select form-select-sm mb-3" aria-label=".form-select-sm example" name="Role" id="Role" placeholder="<?= $Users['Role']; ?>">
+                      <option selected class="active">Choisir son Role</option>
+                      <option value="Admin">Administrateur</option>
+                      <option value="Employe">Employé</option>
+                    </select>
                   </td>
                   <td> <button type="submit" class="btn btn-secondary  text-center"> Modifier</button></td>
                 </tr>

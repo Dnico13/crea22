@@ -1,240 +1,113 @@
 <?php
-session_start();
-require_once './pdo.php';
-require_once './login.php';
 require_once './top.php';
-//require_once './deleteMessage.php';
-require_once './functionReadMessage.php';
+require_once './pdo.php';
+require_once './function/functionDetailOnly.php';
 
-$utilisateurs = getUtilisateur($pdo);
-$details = getDetailetImage($pdo);
 
-$readMessages = readMessages($pdo);
+
+$DetailOnly = DetailOnly($pdo);
+$DetailetImages = getDetailetImage($pdo);
+
+echo '<pre>';
+var_dump($DetailOnly);
+echo '</pre>';
+
+
+
+
+
+
+
+
 
 ?>
 
 <body>
-    <header>
+    <?php
 
-        <h1 class="h1 text-center text-primary">
-            Interface d'administration
-        </h1>
-
-    </header>
-
+    require_once './navbar.php';
+    ?>
     <main>
+        <section>
+            <div class="row flex-lg-row align-items-center g-5 py-5 mx-5">
+
+                <!--<div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Précédent</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Suivant</button>
+                </div>-->
+                <div class="col-12 col-sm-8 col-lg-6">
+
+                    <div id="carouselExample" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="2000">
+                                <img src="<?= $DetailOnly['Image2'];?>" class="d-block w-sm-50 w-md-75" id="imagedetail" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="<?= $DetailOnly['Image3']; ?>" class="d-block w-sm-50 w-md-75" id="imagedetail" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="<?= $DetailOnly['Image4']; ?>" class="d-block w-sm-50 w-md-75" id="imagedetail" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
 
 
-        <div class="container">
-            <!--visuel de la liste des messages -->
-            <div class="row">
-                <h3 class="text-center  text-primary  mt-3 mb-4">Reception des messages du formulaire de Contact </h3>
+                <div class="col-lg-6 descriptif">
+
+                    <div class="h5 nomClient"><?= $DetailOnly['Titre']; ?>:</div>
+                    <p>
+                        <?= $DetailOnly['detail1']; ?>
+                    </p>
+
+                    <div class="h5 programClient">PROGRAMME:</div>
+                    <p>
+                        <?= $DetailOnly['detail2']; ?>
+                    </p>
+                    <div class="h5 Materiaux">PLANCHE MATÉRIAUX :</div>
+                    <p>
+                        <?= $DetailOnly['detail3']; ?>
+                    </p>
+                </div>
+                <!--<p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>-->
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-center justify-content-lg-between">
+                    <button type="button" class="btn btn-secondary btn-lg px-4 me-md-2">
+                        <a href="./detailRealisation.php?Id=>
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+                            </svg>
+                        </a>
+                    </button>
+
+                    <button type="button" class="btn btn-secondary btn-lg px-4">
+                        <a href="./detailRealisation.php?Id=<>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                            </svg>
+                        </a>
+                    </button> 
+                </div>
+
             </div>
-            <div class="row">
-                <table class="table table-striped table-bordered backgroungarray">
-                    <thead class="text-primary">
-                        <tr>
-
-                            <th>Nom:</th>
-                            <th>Prenom:</th>
-                            <th>Email:</th>
-                            <th>Telephone</th>
-                            <th>Message</th>
-
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-                        foreach ($readMessages as $cle => $readMessage) { ?>
-                            <tr>
-
-                                <td> <?= $readMessage['Nom']; ?> </td>
-                                <td> <?= $readMessage['Firstname']; ?> </td>
-                                <td> <?= $readMessage['Email']; ?> </td>
-                                <td> <?= $readMessage['NumberPhone']; ?> </td>
-                                <td> <?= $readMessage['Message']; ?> </td>
-                                <td class="text-center">
-                                    <form action="./deleteMessage.php?=<?= $readMessage['Id']; ?>" method="get">
-                                        <input type="hidden" name="Id" value="<?= $readMessage['Id']; ?>">
-                                        <button class="btn btn-secondary" type="submit">Supprimer</button>
-                                    </form>
-
-                                </td>
-                            </tr>
-                        <?php } ?>
-
-
-
-
-                    </tbody>
-                </table>
-            </div>
-
-            <!--Fin de la partie listes des messages -->
-
-
-
-
-
-
-            <!-- Debut de la partie administrateur et utilisateur du site -->
-            <div class="row">
-                <h3 class="text-center  text-primary mb-3">Grille des Utilisateurs </h3>
-            </div>
-            <div class="row">
-
-                <p>
-                    <a href="createUsers.php" class="btn btn-success">Création d'un gestionnaire.</a>
-                </p>
-
-                <table class="table table-striped table-bordered backgroungarray">
-                    <thead class="text-primary">
-                        <tr>
-
-                            <th>Email:</th>
-                            <th>Nom:</th>
-                            <th>Prenom:</th>
-                            <th>Role:</th>
-
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-                        foreach ($utilisateurs as $cle => $User) { ?>
-                            <tr>
-
-                                <td> <?= $User['Email']; ?> </td>
-                                <td> <?= $User['Name']; ?> </td>
-                                <td> <?= $User['Firstname']; ?> </td>
-                                <td> <?= $User['Role']; ?> </td>
-                                <td class="text-center">
-                                    <a class="btn btn-secondary" href="visu.php?id=<?= $User['Id']; ?>">Modifier</a>
-                                </td>
-                                <!-- integration du boutton suppression directement sur la partie admin-->
-                                <td class="text-center">
-                                    <form action="functionDelete.php?<?= $User['Id']; ?>" method="get">
-                                        <button class="btn btn-secondary " type="submit" value="<?= $User['Id']; ?>" name="id">Supprimer</button>
-                                    </form>
-                                </td>
-
-
-                                <!-- fin de l integration du boutton de suppression -->
-
-                            </tr>
-                        <?php } ?>
-
-
-                    </tbody>
-                </table>
-            </div>
-        </div> <!-- /container -->
-        <!-- Fin de la partie administrateur et utilisateur -->
-
-        <!-- Debut de la partie creation et gestion des Realisations -->
-        <div class="container">
-            <div class="row">
-                <h3 class="text-center  text-primary mb-3">Grille des differentes Realisations </h3>
-            </div>
-            <div class="row">
-
-                <p>
-                    <a href="createRealisation.php" class="btn btn-success">Création d'une Réalisation</a>
-                </p>
-
-                <table class="table table-striped table-bordered backgroungarray">
-                    <thead class="text-primary">
-                        <tr>
-
-                            <th>Titre:</th>
-                            <th>Detail 1:</th>
-                            <th>Detail 2:</th>
-                            <th>Detail 3:</th>
-
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-                        foreach ($details as $cle => $Detail) { ?>
-                            <tr>
-
-                                <td> <?= $Detail['Titre']; ?>
-                                    <!-- integration des boutons de gestions de MAJ et de suppression -->
-                                    <form action="./UpdateRealisation.php?=<?= $readMessage['Id_Real']; ?>" method="get" class="mb-2">
-                                        <input type="hidden" name="Id" value="<?= $readMessage['Id_Real']; ?>">
-                                        <button class="btn btn-secondary" type="submit">Modifier</button>
-                                    </form>
-
-                                    <form action="./deleteRealisation.php?=<?= $Detail['Id_Real']; ?>" method="get">
-                                        <input type="hidden" name="Id" value="<?= $Detail['Id_Real']; ?>">
-                                        <button class="btn btn-secondary" type="submit">Supprimer</button>
-                                    </form>
-
-                                    <!-- fin de la partie integration de Mej et de suppression -->
-
-
-                                </td>
-                                <td> <?= $Detail['detail1']; ?> </td>
-                                <td> <?= $Detail['detail2']; ?> </td>
-                                <td> <?= $Detail['detail3']; ?> </td>
-
-                            </tr>
-                        <?php } ?>
-
-
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="row mt-5 mb-5">
-                <h3 class="text-center  text-primary mb-3">Gestion des Images </h3>
-            </div>
-            <div class="row">
-
-
-
-                <table class="table table-striped table-bordered backgroungarray ">
-                    <thead class="text-primary">
-                        <tr>
-
-                            <th>Titre:</th>
-
-                            <th>Image 1:</th>
-                            <th>Image 2:</th>
-                            <th>Image 3:</th>
-                            <th>Image 4:</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-                        foreach ($details as $cle => $Detail) { ?>
-                            <tr>
-
-                                <td> <?= $Detail['Titre']; ?> </td>
-
-                                <td> <?= $Detail['Image1']; ?> </td>
-                                <td> <?= $Detail['Image2']; ?> </td>
-                                <td> <?= $Detail['Image3']; ?> </td>
-                                <td> <?= $Detail['Image4']; ?> </td>
-                            </tr>
-                        <?php } ?>
-
-
-                    </tbody>
-                </table>
-            </div>
-
-        </div> <!-- /container -->
-
-
-
-
-
-
-        <!-- Fin de la partie creation des Realisations -->
+        </section>
     </main>
-    <footer>
 
+    <footer>
+        <?php
+        require_once './footer.php';
+        ?>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 

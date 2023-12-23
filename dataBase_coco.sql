@@ -257,3 +257,8 @@ Delete from `Contact`
 where Id=1;
 
 UPDATE User SET Email= "Maud@gmail.com", Name= "Piasechi", Firstname= "Maud", Role= "Employe"  WHERE Id=44;
+
+SELECT * FROM Picture  INNER JOIN Realisation ON Id_Real = Realisation.id;
+
+SELECT * FROM Realisation  INNER JOIN Picture ON Realisation.id = Id_Real where Id_Real=18;
+SELECT * FROM Realisation INNER JOIN Picture ON Realisation.id = Id_Real WHERE  Id_Real = 18;
