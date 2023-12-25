@@ -2,10 +2,10 @@
 session_start();
 
 require_once './pdo.php';
-require_once './login.php';
-require_once './top.php';
-//require_once './deleteMessage.php';
-require_once './functionReadMessage.php';
+require_once './log/login.php';
+require_once './template/top.php';
+
+require_once './function/functionReadMessage.php';
 
 $utilisateurs = getUtilisateur($pdo);
 $details = getDetailetImage($pdo);
@@ -24,7 +24,7 @@ if (isset($_SESSION['role']) && $_SESSION['role'] === 'Admin'||$_SESSION['role']
 
         </h1>
         <!--<a class="btn btn-outline-dark align-self-end col-1">Déconnexion</a>-->
-        <form action="./logout.php" method="POST" class="align-self-end col-1">
+        <form action="./log/logout.php" method="POST" class="align-self-end col-1">
             <input type="hidden" name="logout" value="">
             <button class="btn btn-outline-dark" type="submit">Déconnexion</button>
         </form>
@@ -64,7 +64,7 @@ if (isset($_SESSION['role']) && $_SESSION['role'] === 'Admin'||$_SESSION['role']
                                 <td> <?= $readMessage['NumberPhone']; ?> </td>
                                 <td> <?= $readMessage['Message']; ?> </td>
                                 <td class="text-center">
-                                    <form action="./deleteMessage.php?=<?= $readMessage['Id']; ?>" method="get">
+                                    <form action="./function/deleteMessage.php?=<?= $readMessage['Id']; ?>" method="get">
                                         <input type="hidden" name="Id" value="<?= $readMessage['Id']; ?>">
                                         <button class="btn btn-secondary" type="submit">Supprimer</button>
                                     </form>
@@ -98,7 +98,7 @@ if (isset($_SESSION['role']) && $_SESSION['role'] === 'Admin'||$_SESSION['role']
             <div class="row">
 
                 <p>
-                    <a href="createUsers.php" class="btn btn-success">Création d'un gestionnaire.</a>
+                    <a href="./createUsers.php" class="btn btn-success">Création d'un gestionnaire.</a>
                 </p>
 
                 <table class="table table-striped table-bordered backgroungarray">
@@ -126,7 +126,7 @@ if (isset($_SESSION['role']) && $_SESSION['role'] === 'Admin'||$_SESSION['role']
                                 </td>
                                 <!-- integration du boutton suppression directement sur la partie admin-->
                                 <td class="text-center">
-                                    <form action="functionDelete.php?<?= $User['Id']; ?>" method="get">
+                                    <form action="./function/functionDelete.php?<?= $User['Id']; ?>" method="get">
                                         <button class="btn btn-secondary " type="submit" value="<?= $User['Id']; ?>" name="id">Supprimer</button>
                                     </form>
                                 </td>
@@ -154,7 +154,7 @@ if (isset($_SESSION['role']) && $_SESSION['role'] === 'Admin'||$_SESSION['role']
             <div class="row">
 
                 <p>
-                    <a href="createRealisation.php" class="btn btn-success">Création d'une Réalisation</a>
+                    <a href="./createRealisation.php" class="btn btn-success">Création d'une Réalisation</a>
                 </p>
 
                 <table class="table table-striped table-bordered backgroungarray">
@@ -181,7 +181,7 @@ if (isset($_SESSION['role']) && $_SESSION['role'] === 'Admin'||$_SESSION['role']
                                         <button class="btn btn-secondary" type="submit">Modifier</button>
                                     </form> -->
 
-                                    <form action="./deleteRealisation.php?=<?= $Detail['Id_Real']; ?>" method="get">
+                                    <form action="./function/deleteRealisation.php?=<?= $Detail['Id_Real']; ?>" method="get">
                                         <input type="hidden" name="Id" value="<?= $Detail['Id_Real']; ?>">
                                         <button class="btn btn-secondary mt-3" type="submit">Supprimer</button>
                                     </form>

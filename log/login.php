@@ -4,8 +4,9 @@
 
 if ($_SERVER['REQUEST_METHOD'] === "POST")
 {
-    $Email = $_POST['Email'];
-    $Password = $_POST['Password'];
+    try{
+    $Email = htmlspecialchars($_POST['Email']);
+    $Password = htmlspecialchars($_POST['Password']);
 
     if ($query = $pdo->prepare("SELECT * FROM User WHERE Email=:Email")) 
     {
@@ -26,5 +27,8 @@ if ($_SERVER['REQUEST_METHOD'] === "POST")
         }
         
     }
+    } catch (PDOException $e) { 
+        echo('une erreur de saisie est apparrue');
+            }
 }
 

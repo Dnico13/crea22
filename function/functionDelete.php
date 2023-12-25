@@ -1,5 +1,5 @@
 <?php
-require_once './pdo.php';
+require_once '../pdo.php';
 
 function deleteUser($pdo){
     
@@ -12,7 +12,7 @@ function deleteUser($pdo){
         $query->execute();
         
         
-        header('Location: ./InterfAdminis.php');
+        header('Location: ../InterfAdminis.php');
             
 
     }
@@ -21,9 +21,3 @@ function deleteUser($pdo){
 
 deleteUser($pdo);
 
-// partie a verifier 
-
-//<?php
-//if ($_GET['modifier_annonces']) {
- //$user_id = $_GET['id'];   
-//?>

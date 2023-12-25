@@ -26,7 +26,7 @@ function UpdateUser($pdo)
         $query->execute();
         $UpdateUser = $query->fetchAll(PDO::FETCH_ASSOC);
         
-        header ('Location: interfAdminis.php');
+        header ('Location: ../interfAdminis.php');
         return $UpdateUser; 
         
     }  catch (PDOException $e) {

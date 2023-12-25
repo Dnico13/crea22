@@ -1,10 +1,10 @@
 <?php
-require_once './top.php';
+require_once './template/top.php';
 require_once './pdo.php';
 require_once './function/functionCreateRealisation.php';
 creatReal($pdo);
-$utilisateurs = getUtilisateur($pdo);
-$details = getDetailetImage($pdo);
+//$utilisateurs = getUtilisateur($pdo);
+//$details = getDetailetImage($pdo);
 
 ?>
 
@@ -22,7 +22,7 @@ $details = getDetailetImage($pdo);
 
             <div class="row">
 
-            <form class="w-50 m-auto" action="createRealisation.php" method="POST" enctype="multipart/form-data" target="_self">
+            <form class="w-50 m-auto" action="./createRealisation.php" method="POST" enctype="multipart/form-data" target="_self">
                     <div class="mb-2">
                         <label for="Titre" class="form-label">Titre</label>
                         <input type="text" name="Titre" class="form-control" id="Titre" required>

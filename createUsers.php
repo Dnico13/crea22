@@ -1,7 +1,7 @@
 <?php
-require_once './top.php';
+require_once './template/top.php';
 require_once './pdo.php';
-require 'functionCreate.php';
+require_once './function/functionCreate.php';
 $utilisateurs = getUtilisateur($pdo);
 $details = getDetailetImage($pdo);
 
@@ -17,7 +17,7 @@ $details = getDetailetImage($pdo);
     </header>
     <main>
         <!-- Debut creation des gestionnaires du site -->
-        <form class="w-50 m-auto" action="createUsers.php" method="POST" target="_self">
+        <form class="w-50 m-auto" action="./createUsers.php" method="POST" target="_self">
             <div class="mb-3">
                 <label for="Email" class="form-label">Email:</label>
                 <input type="email" name="Email" class="form-control" id="Email">

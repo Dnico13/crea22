@@ -3,5 +3,5 @@
 unset($_SESSION['role']);
 session_destroy();
 
-header('location: espaceClient.php');
+header('location: ../espaceClient.php');
 exit();

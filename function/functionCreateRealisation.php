@@ -4,13 +4,18 @@ Function creatReal($pdo){
     if (($_SERVER['REQUEST_METHOD']== 'POST') && isset($_POST['Submit'])){
 
         
+        $titre= htmlspecialchars($_POST['Titre']);
+        $detail1= htmlspecialchars($_POST['Detail1']);
+        $detail2 = htmlspecialchars($_POST['Detail2']);
+        $detail3 = htmlspecialchars($_POST['Detail3']);
+
         $query  = $pdo->prepare('INSERT INTO Realisation (Titre, detail1, detail2, detail3) VALUES (:T1, :d1, :d2, :d3)');
 
         
-        $query->bindParam(':T1', $_POST['Titre']);
-        $query->bindParam(':d1', $_POST['Detail1']);
-        $query->bindParam(':d2', $_POST['Detail2']);
-        $query->bindParam(':d3', $_POST['Detail3']);
+        $query->bindParam(':T1', $titre);
+        $query->bindParam(':d1', $detail1);
+        $query->bindParam(':d2', $detail2);
+        $query->bindParam(':d3', $detail3);
         
 
         $query->execute();

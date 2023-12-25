@@ -1,5 +1,5 @@
 <?php
-require_once './top.php';
+require_once './template/top.php';
 
 ?>
 

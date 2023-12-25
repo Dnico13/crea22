@@ -1,5 +1,5 @@
 <?php
-require_once './pdo.php';
+require_once '../pdo.php';
 
 function deleteMessage($pdo){
         
@@ -17,7 +17,7 @@ function deleteMessage($pdo){
         $query1 -> bindParam(':Id_supp', $newid);
         $query1->execute();
         
-        header('location: ./InterfAdminis.php');
+        header('location: ../InterfAdminis.php');
 }
 
 deleteMessage($pdo);

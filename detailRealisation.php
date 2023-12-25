@@ -1,5 +1,5 @@
 <?php
-require_once './top.php';
+require_once './template/top.php';
 require_once './pdo.php';
 
 
@@ -16,7 +16,7 @@ $idp = $_GET['id'] +1;
 <body>
     <?php
 
-    require_once './navbar.php';
+    require_once './template/navbar.php';
     ?>
     <main>
         <section>
@@ -94,7 +94,7 @@ $idp = $_GET['id'] +1;
 
     <footer>
         <?php
-        require_once './footer.php';
+        require_once './template/footer.php';
         ?>
     </footer>
 

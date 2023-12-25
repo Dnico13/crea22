@@ -1,7 +1,7 @@
 <?php
-require_once './top.php';
+require_once './template/top.php';
 require_once './pdo.php';
-require_once './functionRead.php';
+require_once './function/functionRead.php';
 $readUser = readUser($pdo);
 
 ?>
@@ -37,7 +37,7 @@ $readUser = readUser($pdo);
             <?php
             foreach ($readUser as $clefs => $Users) { ?>
 
-              <form action="./ModifUsers.php" method="POST">
+              <form action="./function/ModifUsers.php" method="POST">
                 <tr>
                   <td>
                     <?= $Users['Id']; ?>

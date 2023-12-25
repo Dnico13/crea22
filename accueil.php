@@ -1,12 +1,12 @@
 <?php
-require_once './top.php';
+require_once './template/top.php';
 
 ?>
 
 <body>
     <?php
 
-    require_once './header.php';
+    require_once './template/header.php';
 
     ?>
 
@@ -43,7 +43,7 @@ require_once './top.php';
 
     <footer>
         <?php
-        require_once 'footer.php';
+        require_once './template/footer.php';
         ?>
 
     </footer>

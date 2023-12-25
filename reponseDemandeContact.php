@@ -1,5 +1,5 @@
 <?php
-require_once './top.php';
+require_once './template/top.php';
 
 ?>
 
@@ -7,7 +7,7 @@ require_once './top.php';
     <header>
         <?php
 
-        require_once './navbar.php';
+        require_once './template/navbar.php';
 
         ?>
     </header>
@@ -23,7 +23,7 @@ require_once './top.php';
     </main>
     <footer>
         <?php
-        require_once 'footer.php';
+        require_once './template/footer.php';
         ?>
 
     </footer>

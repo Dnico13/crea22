@@ -10,7 +10,7 @@ try {
     $pdo = new PDO('mysql:host=mysql-ndev2023.alwaysdata.net;dbname=ndev2023_coco', $User, $Password);
    
 } catch (PDOException $e) {
-    echo " il y a  un soucis";
+    echo " il y a  un soucis de connexion a la bdd";
 }
 
 

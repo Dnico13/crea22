@@ -1,5 +1,5 @@
 <?php
-require_once'pdo.php';
+require_once'../pdo.php';
 
 function deleteRealisation ($pdo) {
 
@@ -17,7 +17,7 @@ if  ($_SERVER['REQUEST_METHOD']== "GET"){
         $query1 -> bindParam(':Id_supp', $Id_sup);
         $query1->execute();
         
-        header('location: ./InterfAdminis.php');
+        header('location: ../InterfAdminis.php');
 }
 }
 

@@ -1,12 +1,12 @@
 <?php
-require_once './top.php';
+require_once './template/top.php';
 
 ?>
 
 <body>
     <?php
 
-    require_once './navbar.php';
+    require_once './template/navbar.php';
     ?>
         <h1 class="h1 text-center text-primary mb-3">- Espace Pro -</h1>
     <main class="containerCharte">
@@ -32,7 +32,7 @@ Pour vous aider à créer un espace de travail agréable et productif.
     </main>
     <footer>
         <?php
-        require_once './footer.php';
+        require_once './template/footer.php';
         ?>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

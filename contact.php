@@ -1,25 +1,31 @@
 <?php
-require_once './top.php';
+require_once './template//top.php';
 require_once './pdo.php';
 
         
             if ($_SERVER["REQUEST_METHOD"] === "POST") 
             {
-                
+               $nom= htmlspecialchars($_POST['nom']);
+               $prenom= htmlspecialchars($_POST['prenom']);
+               $email=  htmlspecialchars($_POST['email']);
+               $telephone= htmlspecialchars($_POST['telephone']);
+               $message= htmlspecialchars($_POST['message']);
+
+
 
                 $query= $pdo->prepare('INSERT INTO Contact (Nom, Firstname, Email, NumberPhone )  VALUES (:Nom, :Firstname, :email, :telephone)');
                                         
-                    $query->bindParam(':Nom',$_POST['nom']);
-                    $query->bindParam(':Firstname',$_POST['prenom']);
-                    $query->bindParam(':email',$_POST['email']);
-                    $query->bindParam(':telephone',$_POST['telephone']);
+                    $query->bindParam(':Nom',$nom);
+                    $query->bindParam(':Firstname',$prenom);
+                    $query->bindParam(':email',$email);
+                    $query->bindParam(':telephone',$telephone);
                     
                     
                     $query-> execute();
 
                     $id_contact = $pdo->lastInsertId();
 
-                    $message = $_POST['message'];
+                    
 
                     $query2 = $pdo->prepare('INSERT INTO Message (Message, Id_contact) VALUES (:message, :id_contact)');
                     $query2->bindParam(':message', $message);
@@ -35,7 +41,7 @@ require_once './pdo.php';
 <body>
     <?php
 
-    require_once './navbar.php';
+    require_once './template/navbar.php';
     ?>
     <main class="ContenaireContact mb-3">
 
@@ -91,7 +97,7 @@ require_once './pdo.php';
     </main>
     <footer>
         <?php
-        require_once './footer.php';
+        require_once './template/footer.php';
         ?>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

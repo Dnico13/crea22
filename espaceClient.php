@@ -1,8 +1,8 @@
 <?php
 session_start();
 require_once './pdo.php';
-require_once 'login.php';
-require_once './top.php';
+require_once './log/login.php';
+require_once './template/top.php';
 
 ?>
 
@@ -11,7 +11,7 @@ require_once './top.php';
 <body class="text-center">
   <?php
 
-  require_once './navbar.php';
+  require_once './template/navbar.php';
   ?>
 
   <main class="form-signin mb-3">
@@ -36,7 +36,7 @@ require_once './top.php';
 
   <footer>
     <?php
-    require_once './footer.php';
+    require_once './template/footer.php';
     ?>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

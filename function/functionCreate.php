@@ -5,17 +5,22 @@
 function creatUser($pdo)
 {
   if (isset($_POST['Password'])){
-      try {  
-   
+      try { 
+        
+        $name= htmlspecialchars($_POST['Name']);
+        $email= htmlspecialchars($_POST['Email']); 
+        $firstname= htmlspecialchars($_POST['Firstname']) ;
+        $role= htmlspecialchars($_POST['Role']);
+
         $query  = $pdo->prepare('INSERT INTO User (Email, Name, Firstname, Role, Password) VALUES (:email, :name, :firstname, :role, :password)');
 
-        $motDePasse = $_POST['Password'];
+        $motDePasse = htmlspecialchars($_POST['Password']);
         $hachage = password_hash($motDePasse, PASSWORD_DEFAULT);
 
-        $query->bindParam(':email', $_POST['Email']);
-        $query->bindParam(':name', $_POST['Name']);
-        $query->bindParam(':firstname', $_POST['Firstname']);
-        $query->bindParam(':role', $_POST['Role']);
+        $query->bindParam(':email',$email );
+        $query->bindParam(':name', $name);
+        $query->bindParam(':firstname',$firstname );
+        $query->bindParam(':role', $role);
         $query->bindParam(':password', $hachage);
 
         $query->execute();
@@ -31,3 +36,4 @@ function creatUser($pdo)
   }
 
 
+  
