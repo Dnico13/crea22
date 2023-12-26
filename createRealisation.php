@@ -3,8 +3,7 @@ require_once './template/top.php';
 require_once './pdo.php';
 require_once './function/functionCreateRealisation.php';
 creatReal($pdo);
-//$utilisateurs = getUtilisateur($pdo);
-//$details = getDetailetImage($pdo);
+
 
 ?>
 
