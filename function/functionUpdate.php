@@ -30,7 +30,7 @@ function UpdateUser($pdo)
         return $UpdateUser; 
         
     }  catch (PDOException $e) {
-            echo 'la suppression ne passe pas';
+            echo 'la modification n a pas ete realise';
     }
 }
 

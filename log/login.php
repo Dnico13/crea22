@@ -18,6 +18,8 @@ if ($_SERVER['REQUEST_METHOD'] === "POST")
         if (password_verify($Password, $row['Password'])) {
             
             $_SESSION['role'] = $row['Role'];
+            setcookie("crea22", $_SESSION['role'], time() + 600, "/");
+
             
             header('location: ./InterfAdminis.php');
         } else {

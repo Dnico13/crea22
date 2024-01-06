@@ -12,7 +12,9 @@ $details = getDetailetImage($pdo);
 
 $readMessages = readMessages($pdo);
 
-
+IF (!isset($_SESSION['role'])){
+    header('location: http://www.google.fr');
+}
 if (isset($_SESSION['role']) && $_SESSION['role'] === 'Admin'||$_SESSION['role'] === 'Employe')
 { ?>
 
@@ -256,6 +258,4 @@ if (isset($_SESSION['role']) && $_SESSION['role'] === 'Admin'||$_SESSION['role']
 </body>
 
 </html>
-<?php  } else {
-    header ('location : ./index.php');
-}
+<?php  } ?>
