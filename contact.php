@@ -32,7 +32,7 @@ require_once './pdo.php';
                     $query2->bindParam(':id_contact', $id_contact);
 
                     $query2->execute();
-                    header('location: ./reponseDemandeContact.php'); 
+                    header('location: ./accueil.php'); 
             }
 
         
@@ -87,7 +87,7 @@ require_once './pdo.php';
                 <input type="tel" id="telephone" name="telephone"  pattern="[0-9]{10}" required data-error="Veuillez entrer un numéro de téléphone valide." placeholder="0606060606"><br><br>
                 <Label for="message">Message:</Label>
                 <textarea class="form-control" name="message" id="message" rows="5" placeholder="Laissez votre message ici..." required></textarea>
-                <input type="submit" placeholder="Envoyer" class="mt-2" >
+                <input type="submit" onclick="return send()" placeholder="Envoyer" class="mt-2" >
 
             </form>
        
@@ -101,6 +101,7 @@ require_once './pdo.php';
         ?>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/alerte.js"></script>
 </body>
 
 

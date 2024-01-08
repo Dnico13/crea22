@@ -28,7 +28,7 @@ if (isset($_SESSION['role']) && $_SESSION['role'] === 'Admin'||$_SESSION['role']
         <!--<a class="btn btn-outline-dark align-self-end col-1">Déconnexion</a>-->
         <form action="./log/logout.php" method="POST" class="align-self-end col-1">
             <input type="hidden" name="logout" value="">
-            <button class="btn btn-outline-dark" type="submit">Déconnexion</button>
+            <button class="btn btn-outline-dark" type="submit" onclick="return deco()">Déconnexion</button>
         </form>
 
 
@@ -68,7 +68,7 @@ if (isset($_SESSION['role']) && $_SESSION['role'] === 'Admin'||$_SESSION['role']
                                 <td class="text-center">
                                     <form action="./function/deleteMessage.php?=<?= $readMessage['Id']; ?>" method="get">
                                         <input type="hidden" name="Id" value="<?= $readMessage['Id']; ?>">
-                                        <button class="btn btn-secondary" type="submit">Supprimer</button>
+                                        <button class="btn btn-secondary" type="submit" onclick="return del()">Supprimer</button>
                                     </form>
 
                                 </td>
@@ -129,7 +129,7 @@ if (isset($_SESSION['role']) && $_SESSION['role'] === 'Admin'||$_SESSION['role']
                                 <!-- integration du boutton suppression directement sur la partie admin-->
                                 <td class="text-center">
                                     <form action="./function/functionDelete.php?<?= $User['Id']; ?>" method="get">
-                                        <button class="btn btn-secondary " type="submit" value="<?= $User['Id']; ?>" name="id">Supprimer</button>
+                                        <button class="btn btn-secondary " type="submit" value="<?= $User['Id']; ?>" name="id" onclick="return del()">Supprimer</button>
                                     </form>
                                 </td>
 
@@ -185,7 +185,7 @@ if (isset($_SESSION['role']) && $_SESSION['role'] === 'Admin'||$_SESSION['role']
 
                                     <form action="./function/deleteRealisation.php?=<?= $Detail['Id_Real']; ?>" method="get">
                                         <input type="hidden" name="Id" value="<?= $Detail['Id_Real']; ?>">
-                                        <button class="btn btn-secondary mt-3" type="submit">Supprimer</button>
+                                        <button class="btn btn-secondary mt-3" type="submit" onclick="return del()">Supprimer</button>
                                     </form>
 
                                     <!-- fin de la partie integration de Mej et de suppression -->
@@ -255,6 +255,7 @@ if (isset($_SESSION['role']) && $_SESSION['role'] === 'Admin'||$_SESSION['role']
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/alerte.js"></script>
 </body>
 
 </html>
