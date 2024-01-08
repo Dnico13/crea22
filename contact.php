@@ -84,7 +84,7 @@ require_once './pdo.php';
                 <label for="email">Adresse e-mail :</label>
                 <input type="email" id="email" name="email" required><br><br>
                 <label for="telephone">Numéro de téléphone :</label>
-                <input type="tel" id="telephone" name="telephone"  pattern="[0-9]{10}" required data-error="Veuillez entrer un numéro de téléphone valide." placeholder="0606060606"><br><br>
+                <input type="tel" id="telephone" name="telephone"  pattern="[0-9]{10}" minlength="10" maxlength="10" data-error="Veuillez entrer un numéro de téléphone valide." placeholder="0606060606"><br><br>
                 <Label for="message">Message:</Label>
                 <textarea class="form-control" name="message" id="message" rows="5" placeholder="Laissez votre message ici..." required></textarea>
                 <input type="submit" onclick="return send()" placeholder="Envoyer" class="mt-2" >
